@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_c2d93fa813f5f6125c3e6ead1f9df717b09810e5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5e731d961297e5a07290bfaf3db1fbc8bbbf405a">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/hibernate-jpa-2.1-api-1.0.0.Final_ca3747aeb142283178f8b53e506d2ec310c36338/classes.dex" />
+    </item>
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/org.androidannotations/ormlite-api/4.1.0/aeecadffcbcd633ffc27ca248ff2c8c057ade55a/ormlite-api-4.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="aeecadffcbcd633ffc27ca248ff2c8c057ade55a">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-api-4.1.0_d2cb08768074e5abc189ee1d79328214ad180450/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="7ba0d6a037695cdb0696a5312c7ad89f10a9655d">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_73e9cba81c8a6cf8d3a1d9d46f1d03a0582f22b9/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_9efc7ce06d40e883a108ef167fb3338c1fa2f330/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7cdac537694704c12a20034e4a1bddba86445304/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_fa8ecb26b3113e51e03b5f02daa76a2a48368c7f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/5.0/1f065373aeef355dd9e2fd9854efd5ed4d54f6d/ormlite-android-5.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="01f065373aeef355dd9e2fd9854efd5ed4d54f6d">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-android-5.0_27b86a11f9ce211821da7c7d17ad02f8626cd122/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_1470abd75c0b224719bc88b471fbe203be221680/classes.dex" />
+    </item>
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/4.1.0/5f9b485312ee0ee95355d517f36890915de1bff0/androidannotations-api-4.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5f9b485312ee0ee95355d517f36890915de1bff0">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/androidannotations-api-4.1.0_b32a952d5b549321b135712150a0c4e90698c3d9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/rodrigo.p.fraga/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/5.0/3382b8260646dd334a1b9c1b3d412fcb73d8b21/ormlite-core-5.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="03382b8260646dd334a1b9c1b3d412fcb73d8b21">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-core-5.0_8f45002e87a8896637f7157579fe15594496e03c/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_0c3c713409ba45682bd5a5bbdc137ae5b8d952d3/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_a418c3ed17a7c90bdd6920ae38e0bbffe9d581bf/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/eu.inmite.android.lib/android-validation-komensky/0.9.4/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d17090479787dc0bda52b915d4ecd98f52a53f8b">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/eu.inmite.android.lib-android-validation-komensky-0.9.4_7ba7012833604135a342905e7574787feb4ad02c/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="81487ef112a203c01232493fe37e9126123e2031">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c1fc28815c62f6fb1d5589daa971fdc4e224adf2/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_ae56e375f56c209a13ce3b06fca2f2e53f76cdde/classes.dex" />
+    </item>
+
+</items>

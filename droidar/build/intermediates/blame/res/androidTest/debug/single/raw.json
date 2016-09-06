@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/raw/camaro_mtl",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/raw/camaro_mtl"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/raw/camaro_obj",
+        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/raw/camaro_obj"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/raw/camaro_mtl",
+        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/raw/camaro_mtl"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/raw/camaro_obj",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/raw/camaro_obj"
+    }
+]

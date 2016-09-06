@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Volumes/Files/Development/workspaces/aula/android/droidar/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Volumes/Files/Development/workspaces/aula/android/droidar/src/debug/jniLibs"/></dataSet></merger>

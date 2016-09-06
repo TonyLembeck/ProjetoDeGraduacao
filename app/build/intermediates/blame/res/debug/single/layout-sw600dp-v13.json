@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]

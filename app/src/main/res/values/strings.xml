@@ -1,0 +1,18 @@
+<resources>
+    <string name="label_applicationName">Android Sample</string>
+
+    <string name="label_authentication">Autenticação do Usuário</string>
+    <string name="label_begin">ENTRAR</string>
+    <string name="message_enterYourPassword">Entre com sua senha</string>
+    <string name="message_enterYourEmail">Entre com seu email</string>
+    <string name="label_home">Home</string>
+    <string name="message_yourPasswordLengthWrong">A senha deve ser maior que 4 digitos.</string>
+    <string name="message_errorToAuthenticate">Não foi possível autenticar. Por favor tente novamente.</string>
+    <string name="message_hello">Seja bem Vindo!</string>
+    <string name="label_loading">Carregando...</string>
+    <string name="message_loadingData">Aguarde o carregamento dos dados.</string>
+
+    <string name="message_monitoringServiceStarted">Serviço de monitoramento iniciado.</string>
+    <string name="message_monitoringServiceStoped">Serviço de monitormaneto desativado.</string>
+    <string name="label_monitoringService">Serviço de Monitoramento</string>
+</resources>
