@@ -2,9 +2,5 @@
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

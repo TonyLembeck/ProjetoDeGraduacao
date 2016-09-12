@@ -1,35 +1,31 @@
 [
     {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/icon2.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/icon2.png"
+    },
+    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/questioncircleblue.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/questioncircleblue.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_material.xml"
     },
     {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/logo.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/logo.png"
+    },
+    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
@@ -38,10 +34,6 @@
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
@@ -60,36 +52,40 @@
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/p3.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/p3.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/panda64.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/panda64.png"
+    },
+    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/minuscirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/minuscirclegray.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/up2.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/up2.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/penguin64.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/penguin64.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/hippopotamus64.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/hippopotamus64.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
@@ -104,16 +100,16 @@
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/infogray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/infogray.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/warningcirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/warningcirclegray.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/logosmall.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/logosmall.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
@@ -124,116 +120,116 @@
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_material.xml"
-    },
-    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/starcirclegreen.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/starcirclegreen.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/mapdotblue.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/mapdotblue.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/invisible.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/invisible.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/infoboxblue.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/infoboxblue.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/elephant64.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/elephant64.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/mapdotyellow.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/mapdotyellow.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/p1.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/p1.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/mapdotred.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/mapdotred.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/questionboxgray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/questionboxgray.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_text_cursor_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/down.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/down.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/up.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/up.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/icon4.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/icon4.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/correctcirclegreen.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/correctcirclegreen.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
-    },
-    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/pluscirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/pluscirclegray.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/starboxgreen.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/starboxgreen.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/down2.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/down2.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/correctcirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/correctcirclegray.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
@@ -248,19 +244,55 @@
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/spaceship.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/spaceship.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/questioncirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/questioncirclegray.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/starcirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/starcirclegray.png"
+    },
+    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/icon3.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/icon3.png"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/incorrectcirclegray.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/incorrectcirclegray.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/icon6.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/icon6.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/incorrectcirclered.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/incorrectcirclered.png"
     },
     {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/infoboxblue2.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/infoboxblue2.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/p2.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/p2.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/warningcirclered.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/warningcirclered.png"
+    },
+    {
+        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable/mapdotgreen.png",
+        "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/res/drawable/mapdotgreen.png"
     }
 ]

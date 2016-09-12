@@ -12,8 +12,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import br.com.android.sample.R;
+import org.androidannotations.api.UiThreadExecutor;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
@@ -71,7 +73,31 @@ public final class HomeActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        View view_buttonAR = hasViews.findViewById(R.id.buttonAR);
+
+        if (view_buttonAR!= null) {
+            view_buttonAR.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    HomeActivity_.this.onARClick();
+                }
+            }
+            );
+        }
         onAfterViews();
+    }
+
+    @Override
+    public void onARClick() {
+        UiThreadExecutor.runTask("", new Runnable() {
+
+            @Override
+            public void run() {
+                HomeActivity_.super.onARClick();
+            }
+        }
+        , 0L);
     }
 
     public static class IntentBuilder_

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-v23/abc_control_background_material.xml"
-    },
-    {
         "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-v23/abc_control_background_material.xml"
     }

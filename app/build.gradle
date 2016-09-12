@@ -67,6 +67,7 @@ dependencies {
     compile 'org.androidannotations:ormlite-api:4.1.0'
 
     testCompile 'junit:junit:4.12'
+    compile project(path: ':droidAR')
 }
 
 apt {

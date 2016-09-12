@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:2:1-111:12
 	package
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:3:11-42
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
@@ -15,6 +15,7 @@ ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/Andro
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:22:5-67
 	android:name
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -30,7 +31,7 @@ ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/Andro
 	android:name
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:8:22-65
 application
-ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:10:5-35:19
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:10:5-77:19
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
@@ -49,14 +50,17 @@ MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Volumes/Files
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [eu.inmite.android.lib:android-validation-komensky:0.9.4] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/eu.inmite.android.lib/android-validation-komensky/0.9.4/AndroidManifest.xml:11:5-20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:40:5-93:19
 	android:label
-		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:13:9-41
 	android:supportsRtl
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:14:9-35
+	android:debuggable
+		ADDED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:41:9-34
 	android:allowBackup
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:12:9-38
 	android:theme
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:15:9-40
 activity#br.com.android.sample.view.authentication.AuthenticationActivity_
@@ -81,8 +85,61 @@ ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/Andro
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:33:13-47
 	android:name
 		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:32:13-73
+activity#system.ArActivity
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:41:9-46:20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:57:9-62:20
+	android:screenOrientation
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:45:13-50
+	android:label
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:44:13-45
+	android:configChanges
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:43:13-63
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:42:13-45
+activity#gui.CustomListActivity
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:49:9-50:20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:65:9-66:20
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:49:19-56
+activity#system.ErrorHandler
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:53:9-64:20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:69:9-80:20
+	android:process
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:55:13-49
+	android:taskAffinity
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:56:13-55
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:54:13-47
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:57:13-63:29
+category#android.intent.category.DEFAULT
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:58:17-76
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:58:27-73
+action#android.intent.action.VIEW
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:60:17-69
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:60:25-66
+data
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:62:17-69
+	android:mimeType
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:62:23-66
+activity#gui.InfoScreen
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:67:9-70:20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:83:9-86:20
+	android:theme
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:69:13-56
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:68:13-42
+activity#gui.simpleUI.SimpleUIv1
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:73:9-76:20
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:89:9-92:20
+	android:theme
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:75:13-61
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:74:13-51
 uses-sdk
-INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:84:5-43
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
@@ -102,11 +159,70 @@ MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Volumes/Files
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-v4:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [eu.inmite.android.lib:android-validation-komensky:0.9.4] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/eu.inmite.android.lib/android-validation-komensky/0.9.4/AndroidManifest.xml:7:5-9:41
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:11:5-13:40
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.0.0] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:84:15-40
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:90:5-81
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:90:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:91:5-79
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:91:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:92:5-65
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:92:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:94:5-66
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:94:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:95:5-81
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:95:22-78
+uses-feature#android.hardware.camera
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:97:5-60
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:26:5-60
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:97:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:98:5-70
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:27:5-70
+	android:name
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:98:19-67
+uses-feature#0x00020000
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:99:5-54
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:28:5-54
+	android:glEsVersion
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:99:19-51
+supports-screens
+ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:105:5-109:39
+MERGED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:34:5-38:39
+	android:largeScreens
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:107:9-36
+	android:smallScreens
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:109:9-36
+	android:normalScreens
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:108:9-37
+	android:anyDensity
+		ADDED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:106:9-34
+activity#de.rwth.TechDemoLauncher
+ADDED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:44:9-50:20
+	android:name
+		ADDED from [android:droidAR:unspecified] /Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/exploded-aar/android/droidAR/unspecified/AndroidManifest.xml:44:19-58
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Volumes/Files/Development/workspaces/aula/android/app/src/main/AndroidManifest.xml:2:1-111:12 reason: de.rwth requested WRITE_EXTERNAL_STORAGE
