@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/questioncirclegray.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/questioncirclegray.png"
-    },
-    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/penguin64.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/penguin64.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/questioncirclegray.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/questioncirclegray.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/correctcirclegray.png",

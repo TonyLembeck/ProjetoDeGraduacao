@@ -1,2 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/4.1.0/5f9b485312ee0ee95355d517f36890915de1bff0/androidannotations-api-4.1.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="5f9b485312ee0ee95355d517f36890915de1bff0">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/androidannotations-api-4.1.0_3b9e089782547eb5779780e480235bd271c407b3/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_b98fa18812f88fd149ee24da19a628ca4aeb2138/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/org.androidannotations/ormlite-api/4.1.0/aeecadffcbcd633ffc27ca248ff2c8c057ade55a/ormlite-api-4.1.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="aeecadffcbcd633ffc27ca248ff2c8c057ade55a">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-api-4.1.0_d678848fe55a9d45fed1d81bff09fecb4666d084/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="5e731d961297e5a07290bfaf3db1fbc8bbbf405a">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/hibernate-jpa-2.1-api-1.0.0.Final_745b57a1e2410e6f1acbbfab006c2a0d98e2b8b5/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_572cd92060a4f81cb1ac1d633ce845d1291a9e67/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_450a10344ea0f1ba9e3d179faeeed25a272e0f4b/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/5.0/3382b8260646dd334a1b9c1b3d412fcb73d8b21/ormlite-core-5.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="03382b8260646dd334a1b9c1b3d412fcb73d8b21">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-core-5.0_a52cfa4e64d0da0ed554384dc63a606c6c98bda8/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_d44c7c1dcbdef60df9c49074cffb8c30fb3f339f/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="64e63fe85c8afe9afc5a9d78bb116341a2378863">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_820fa3d2bd31ebc6d0e85ce9ad01b284d82b6876/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/5.0/1f065373aeef355dd9e2fd9854efd5ed4d54f6d/ormlite-android-5.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="01f065373aeef355dd9e2fd9854efd5ed4d54f6d">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-android-5.0_5680e1d51b2a50ed9be807fb09357faa62325de5/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/eu.inmite.android.lib/android-validation-komensky/0.9.4/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d17090479787dc0bda52b915d4ecd98f52a53f8b">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/eu.inmite.android.lib-android-validation-komensky-0.9.4_e6322b5714a6911add7aa886412f50c44f6d144e/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_2b98fc4d20e9e2f4027aa4edabba10b44338e391/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_b0181aaddf33577526570bdb35f2e361883f39b4/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="a55601d3f66086b5c295716bed5d6b700cb10daa">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e7ccd7a17e8321277ec4d741bd45b40465c54e2/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_77aa1087d4c8cd8d992552a2f5ef19717b4bf1f8/classes.dex" />
+    </item>
+    <item
+        jar="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_070223ed49650c52441a5b1ab9adeeb53b211b37/classes.dex" />
+    </item>
+
+</items>

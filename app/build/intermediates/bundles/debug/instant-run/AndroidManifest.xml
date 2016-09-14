@@ -116,11 +116,6 @@
             android:theme="@android:style/Theme.Translucent" >
         </activity>
         <activity android:name="de.rwth.TechDemoLauncher" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

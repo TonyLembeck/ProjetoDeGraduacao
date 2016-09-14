@@ -1,3 +1,5 @@
+
+
 package br.com.android.sample.view.home;
 
 import android.Manifest;
@@ -58,13 +60,13 @@ public class HomeActivity extends AppCompatActivity
     {
     }
 
-    /**
-     *
-     */
 
     private Location location;
     private LocationManager locationManager;
 
+    /**
+     *
+     */
     @UiThread
     @Click(R.id.buttonAR)
     public void onARClick()
@@ -84,7 +86,7 @@ public class HomeActivity extends AppCompatActivity
 
                 final Location l = new Location("");
 
-                l.setLatitude(location.getLatitude() -0.025911);
+                l.setLatitude(location.getLatitude() -0.0005);
                 l.setLongitude(location.getLongitude());
                 Obj o = new GeoObj(l);
                 o.setComp(objectFactory.newArrow());
