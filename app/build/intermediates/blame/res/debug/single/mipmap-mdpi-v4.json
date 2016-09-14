@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]

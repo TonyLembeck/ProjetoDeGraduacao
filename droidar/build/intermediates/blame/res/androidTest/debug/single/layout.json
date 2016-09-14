@@ -1,66 +1,34 @@
 [
     {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/action_wait_for_accuracy_view.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/action_wait_for_accuracy_view.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/basicdialog.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/basicdialog.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/basicdialog.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/basicdialog.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/test_layout.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/test_layout.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/errorreports.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/errorreports.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlistitemview.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/defaultlistitemview.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/test_layout.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/test_layout.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/action_wait_for_accuracy_view.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/action_wait_for_accuracy_view.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/errorreports.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/errorreports.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/demoselector.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/demoselector.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlistitemview.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/defaultlistitemview.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/errorreports.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/errorreports.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/demoselector.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/demoselector.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlayout.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/defaultlayout.xml"
     },
     {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/infoscreen.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/infoscreen.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/infoscreen.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/infoscreen.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlayout.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/defaultlayout.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/action_wait_for_accuracy_view.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/action_wait_for_accuracy_view.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlistitemview.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/defaultlistitemview.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/demoselector.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/demoselector.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/test_layout.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/test_layout.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/res/merged/androidTest/debug/layout/defaultlayout.xml",
-        "source": "/Volumes/Files/Development/workspaces/eletrobras/ernex/6-Implementacao/4.1-Codigo_Fonte/mobile/collector/droidar/build/intermediates/bundles/debug/res/layout/defaultlayout.xml"
-    },
-    {
-        "merged": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/res/merged/androidTest/debug/layout/basicdialog.xml",
-        "source": "/Volumes/Files/Development/workspaces/aula/android/droidar/build/intermediates/bundles/debug/res/layout/basicdialog.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/layout/infoscreen.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/layout/infoscreen.xml"
     }
 ]

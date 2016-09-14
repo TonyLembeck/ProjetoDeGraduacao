@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Volumes/Files/Development/workspaces/aula/android/app/src/androidTest/assets"/><source path="/Volumes/Files/Development/workspaces/aula/android/app/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/androidTest/assets"/><source path="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/generated/assets/shaders/androidTest/debug"/></dataSet></merger>

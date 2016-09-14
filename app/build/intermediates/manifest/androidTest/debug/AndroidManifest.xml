@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.android.sample.test">
 
-    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="24" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21" />
 
     <application>
         <uses-library android:name="android.test.runner" />
