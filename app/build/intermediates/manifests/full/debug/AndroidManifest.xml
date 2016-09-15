@@ -46,22 +46,13 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/logocponto"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
-        <!-- Services -->
-
-
-        <!-- Receivers -->
-
-
-        <!-- Activities -->
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
-            android:name="br.com.android.sample.view.authentication.AuthenticationActivity_"
-            android:label="@string/label_authentication" >
+            android:name="br.com.android.sample.view.inicial.InicialActivity_"
+            android:label="@string/label_inicial" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,8 +61,10 @@
         </activity>
         <activity
             android:name="br.com.android.sample.view.home.HomeActivity_"
-            android:label="@string/label_home" >
-        </activity>
+            android:label="@string/label_home" />
+        <activity
+            android:name="br.com.android.sample.view.authentication.AuthenticationActivity_"
+            android:label="@string/label_authentication" />
 
         <!--
                  IMPORTANT: The following activities have to be added to each project
@@ -82,12 +75,10 @@
             android:name="system.ArActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name"
-            android:screenOrientation="landscape" >
-        </activity>
+            android:screenOrientation="landscape" />
 
         <!-- Custom List is used to easily display lists of any type of object -->
-        <activity android:name="gui.CustomListActivity" >
-        </activity>
+        <activity android:name="gui.CustomListActivity" />
 
         <!-- the error handler will be automatically displayed when an error appears -->
         <activity
@@ -106,16 +97,12 @@
         <!-- is needed to display information on application startup -->
         <activity
             android:name="gui.InfoScreen"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
+            android:theme="@android:style/Theme.Dialog" />
 
         <!-- an activity to easily display any kind of ui -->
         <activity
             android:name="gui.simpleUI.SimpleUIv1"
-            android:theme="@android:style/Theme.Translucent" >
-        </activity>
-        <activity android:name="de.rwth.TechDemoLauncher" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>

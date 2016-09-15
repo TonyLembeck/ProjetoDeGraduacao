@@ -15,4 +15,12 @@
     <string name="message_monitoringServiceStarted">Serviço de monitoramento iniciado.</string>
     <string name="message_monitoringServiceStoped">Serviço de monitormaneto desativado.</string>
     <string name="label_monitoringService">Serviço de Monitoramento</string>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="app_name">CPonto</string>
+    <string name="label_inicial">Tela Inicial</string>
+    <string name="logo">logo</string>
+    <string name="login">Login</string>
+    <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
 </resources>

@@ -176,6 +176,10 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_item_separator.xml"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/layout/activity_inicial.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/layout/activity_inicial.xml"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/layout/authentication_activity.xml",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/layout/authentication_activity.xml"
     },

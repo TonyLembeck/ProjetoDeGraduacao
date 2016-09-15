@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="br.com.android.sample.view.inicial.InicialActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/logo"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logotelainicial"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="101dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar_nova_conta"
+        android:id="@+id/cadastrarNovaConta"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>

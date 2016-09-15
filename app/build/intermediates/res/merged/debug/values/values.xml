@@ -295,17 +295,21 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">DroidAR</string>
+    <string name="app_name">CPonto</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="errorstring">de.rwth.error</string>
     <string name="label_applicationName">Android Sample</string>
     <string name="label_authentication">Autenticação do Usuário</string>
     <string name="label_begin">ENTRAR</string>
     <string name="label_home">Home</string>
+    <string name="label_inicial">Tela Inicial</string>
     <string name="label_loading">Carregando...</string>
     <string name="label_monitoringService">Serviço de Monitoramento</string>
+    <string name="login">Login</string>
+    <string name="logo">logo</string>
     <string name="message_enterYourEmail">Entre com seu email</string>
     <string name="message_enterYourPassword">Entre com sua senha</string>
     <string name="message_errorToAuthenticate">Não foi possível autenticar. Por favor tente novamente.</string>
