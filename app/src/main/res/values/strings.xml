@@ -23,4 +23,6 @@
     <string name="logo">logo</string>
     <string name="login">Login</string>
     <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="senha">Senha:</string>
 </resources>

@@ -49,10 +49,11 @@
         android:icon="@drawable/logocponto"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        android:theme="@style/AppTheme.NoActionBar" >
         <activity
             android:name="br.com.android.sample.view.inicial.InicialActivity_"
-            android:label="@string/label_inicial" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,7 +65,8 @@
             android:label="@string/label_home" />
         <activity
             android:name="br.com.android.sample.view.authentication.AuthenticationActivity_"
-            android:label="@string/label_authentication" />
+            android:label="@string/label_authentication"
+            android:screenOrientation="portrait" />
 
         <!--
                  IMPORTANT: The following activities have to be added to each project

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-105:12
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-106:12
 	package
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml
@@ -113,7 +113,7 @@ MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioPro
 	android:anyDensity
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:36:9-34
 application
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:42:5-103:19
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:42:5-104:19
 MERGED from [com.android.support:appcompat-v7:24.0.0] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
@@ -142,11 +142,13 @@ MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioPro
 	android:icon
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:44:9-44
 	android:theme
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:47:9-68
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:47:9-52
 activity#br.com.android.sample.view.inicial.InicialActivity_
 ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:49:9-58:20
+	android:screenOrientation
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:52:13-49
 	android:label
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:51:13-50
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:51:13-45
 	android:name
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:50:13-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
@@ -166,63 +168,65 @@ ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/Andr
 	android:name
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:60:13-52
 activity#br.com.android.sample.view.authentication.AuthenticationActivity_
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:62:9-64:69
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:62:9-65:61
+	android:screenOrientation
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:65:13-49
 	android:label
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:64:13-57
 	android:name
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:63:13-72
 activity#system.ArActivity
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:71:9-75:62
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:72:9-76:62
 MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/AndroidManifest.xml:47:9-51:20
 	android:screenOrientation
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:75:13-50
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:76:13-50
 	android:label
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:74:13-45
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:75:13-45
 	android:configChanges
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:73:13-63
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:74:13-63
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:72:13-45
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:73:13-45
 activity#gui.CustomListActivity
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:78:9-68
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:79:9-68
 MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/AndroidManifest.xml:54:9-55:20
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:78:19-56
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:79:19-56
 activity#system.ErrorHandler
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:81:9-92:20
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:82:9-93:20
 MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/AndroidManifest.xml:58:9-69:20
 	android:process
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:83:13-49
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:84:13-49
 	android:taskAffinity
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:84:13-55
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:85:13-55
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:82:13-47
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:83:13-47
 intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:85:13-91:29
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:86:13-92:29
 category#android.intent.category.DEFAULT
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:86:17-76
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:87:17-76
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:86:27-73
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:87:27-73
 action#android.intent.action.VIEW
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:88:17-69
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:89:17-69
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:88:25-66
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:89:25-66
 data
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:90:17-69
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:91:17-69
 	android:mimeType
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:90:23-66
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:91:23-66
 activity#gui.InfoScreen
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:95:9-97:68
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:96:9-98:68
 MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/AndroidManifest.xml:72:9-75:20
 	android:theme
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:97:13-56
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:98:13-56
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:96:13-42
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:97:13-42
 activity#gui.simpleUI.SimpleUIv1
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:100:9-102:73
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:101:9-103:73
 MERGED from [ProjetoDeGraduacao:droidar:unspecified] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/AndroidManifest.xml:78:9-81:20
 	android:theme
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:102:13-61
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:103:13-61
 	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:101:13-51
+		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:102:13-51
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-105:12 reason: de.rwth requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-106:12 reason: de.rwth requested WRITE_EXTERNAL_STORAGE

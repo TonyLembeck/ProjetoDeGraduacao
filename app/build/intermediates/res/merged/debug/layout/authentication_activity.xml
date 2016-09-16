@@ -1,46 +1,63 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:orientation="vertical"
-              tools:context=".view.authentication.AuthenticationActivity"
-              android:padding="25dp"
-              android:gravity="center_horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".view.authentication.AuthenticationActivity"
+    android:padding="25dp"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimaryDark"
+    android:screenOrientation="landscape">
 
-    <ImageView
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        android:id="@+id/email"
+        android:layout_marginTop="179dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/branco"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher">
-    </ImageView>
+        android:inputType="textEmailAddress"
+        android:id="@+id/inputEmail"
+        android:textColor="@color/branco"
+        android:layout_below="@+id/email"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        android:id="@+id/senha"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/branco"
+        android:layout_below="@+id/inputEmail"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/inputEmail"
-            android:hint="@string/message_enterYourEmail"
-            android:text="admin@admin.com"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:id="@+id/inputPassword"
-            android:hint="@string/message_enterYourPassword"
-            android:text="admin"/>
-    </LinearLayout>
+        android:inputType="textWebPassword"
+        android:id="@+id/inputPassword"
+        android:textColor="@color/branco"
+        android:layout_below="@+id/senha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_begin"
         android:id="@+id/begin"
-        android:width="200dp"/>
+        android:layout_below="@+id/inputPassword"
+        android:layout_centerHorizontal="true" />
 
-</LinearLayout>
+
+</RelativeLayout>

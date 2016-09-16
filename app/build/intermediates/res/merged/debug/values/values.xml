@@ -19,6 +19,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="branco">#FFFFFF</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -300,6 +301,7 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="e_mail">E-mail:</string>
     <string name="errorstring">de.rwth.error</string>
     <string name="label_applicationName">Android Sample</string>
     <string name="label_authentication">Autenticação do Usuário</string>
@@ -318,6 +320,7 @@
     <string name="message_monitoringServiceStarted">Serviço de monitoramento iniciado.</string>
     <string name="message_monitoringServiceStoped">Serviço de monitormaneto desativado.</string>
     <string name="message_yourPasswordLengthWrong">A senha deve ser maior que 4 digitos.</string>
+    <string name="senha">Senha:</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

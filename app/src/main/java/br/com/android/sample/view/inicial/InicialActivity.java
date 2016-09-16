@@ -10,7 +10,7 @@ import org.androidannotations.annotations.UiThread;
 import br.com.android.sample.R;
 import br.com.android.sample.view.authentication.AuthenticationActivity_;
 
-@EActivity(R.layout.activity_inicial)
+@EActivity(R.layout.inicial_activity)
 public class InicialActivity extends AppCompatActivity {
 
     @UiThread
