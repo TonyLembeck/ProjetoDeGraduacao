@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/logo"
+        android:id="@+id/imgLogo"
         android:contentDescription="@string/logo"
         android:src="@drawable/logotelainicial"
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -27,7 +27,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:id="@+id/login"
+        android:id="@+id/btnLogin"
         android:textColor="@color/colorPrimaryDark"
         android:layout_above="@+id/cadastrarNovaConta"
         android:layout_alignParentLeft="true"

@@ -1,23 +1,19 @@
 [
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/up2.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/up2.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon6.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon6.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_dark.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logosmall.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/logosmall.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mapdotgreen.png",
@@ -25,39 +21,43 @@
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/infoboxblue.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/infoboxblue.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/starcirclegray.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/starcirclegray.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/pluscirclegray.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/pluscirclegray.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_gradient_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_mini_controller_gradient_light.xml"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_text_cursor_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_text_cursor_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mapdotblue.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/mapdotblue.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_light.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logotelainicial.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/logotelainicial.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.4.0/res/drawable/cast_ic_notification_connecting.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/panda64.png",
@@ -68,16 +68,20 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/mapdotyellow.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_dark.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop_large.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_stop_large.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_top_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/p1.png",
@@ -85,11 +89,11 @@
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logocponto.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/logocponto.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_forward30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_forward30.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/spaceship.png",
@@ -100,64 +104,68 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/correctcirclegray.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/down2.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/down2.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_prev.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_skip_prev.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_forward30.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/questionboxgray.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/questionboxgray.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_light.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon4.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon4.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_small_icon.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_small_icon.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/up.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/up.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/questioncirclegray.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/questioncirclegray.png"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon3.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon3.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/down.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/down.png"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/p2.png",
@@ -168,72 +176,28 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/warningcirclered.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/correctcirclegreen.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/correctcirclegreen.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/penguin64.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/penguin64.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/starcirclegreen.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/starcirclegreen.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon2.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon2.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/minuscirclegray.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/minuscirclegray.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon.png"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind10.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_rewind10.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_closed_caption.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_closed_caption.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/hippopotamus64.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/hippopotamus64.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/incorrectcirclered.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/incorrectcirclered.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/invisible.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/invisible.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logo.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/logo.png"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mapdotred.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/mapdotred.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/questioncircleblue.png",
@@ -244,16 +208,16 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/infoboxblue2.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause_large.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_pause_large.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_bg_gradient_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_expanded_controller_bg_gradient_light.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_radio_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/incorrectcirclegray.png",
@@ -261,11 +225,287 @@
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/warningcirclegray.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/warningcirclegray.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_rewind30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_rewind30.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play_large.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_play_large.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_rewind30.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_pause.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_pause.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon6.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon6.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_rewind.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_mute.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_mute.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/starcirclegray.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/starcirclegray.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_closed_caption.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_closed_caption.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logotelainicial.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/logotelainicial.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_pause.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_pause.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_progress_drawable.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_mini_controller_progress_drawable.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_play.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_play.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_stop_live_stream.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_stop_live_stream.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logocponto.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/logocponto.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/down2.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/down2.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_pause.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_play.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_play.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon4.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon4.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/up.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/up.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/questioncirclegray.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/questioncirclegray.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/down.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/down.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/correctcirclegreen.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/correctcirclegreen.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_play.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_play.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_stop.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/penguin64.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/penguin64.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_rewind30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_rewind30.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_next.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_skip_next.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/starcirclegreen.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/starcirclegreen.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon2.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon2.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_disconnect.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_disconnect.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/icon.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/incorrectcirclered.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/incorrectcirclered.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_forward30.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_forward30.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/invisible.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/invisible.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_next.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_skip_next.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_next.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_skip_next.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/logo.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/logo.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_skip_previous.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_skip_previous.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mapdotred.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/mapdotred.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_mute.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_mute.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_forward.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/starboxgreen.png",
@@ -277,7 +517,7 @@
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_material.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_material.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/elephant64.png",
@@ -288,27 +528,35 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/infogray.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_skip_prev.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_skip_prev.xml"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward10.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_notification_forward10.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/botaofoto.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/botaofoto.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_light.xml"
     }
 ]

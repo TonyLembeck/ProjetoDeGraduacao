@@ -3,46 +3,49 @@
     package="br.com.android.sample"
     android:versionCode="1"
     android:versionName="1.0" >
-    <!--
-         The minimum sdk version is set to 3 because all the methods should
-		work for devices with android 1.5 as well. The development version is set
-		to 1.6 to get access to stuff like high res. screens (eg samsung galaxy tab)
-    -->
+
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <!--
-         IMPORTANT: The following permissions should also be added to each project
-		which uses the DroidAR Library
-    -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="br.com.android.sample.view.mapa.MAPS_RECEVE" />
+
+    <permission
+        android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
+        android:protectionLevel="signature" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
-    <!--
-         This should be added to to allow the fullscreen mode to big screen
-		devices like the samsung galaxy tab
-    -->
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true"
         android:smallScreens="true" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permission for Analytics to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="br.com.android.sample.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="br.com.android.sample.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -67,22 +70,35 @@
             android:name="br.com.android.sample.view.authentication.AuthenticationActivity_"
             android:label="@string/label_authentication"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name="br.com.android.sample.view.cadastro.CadastroUsuarioActivity_"
+            android:screenOrientation="portrait" />
         <!--
-                 IMPORTANT: The following activities have to be added to each project
-                which imports the DroidAR Library
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCSAzZmnwCgS2S5dwHaxekulesf2nrsdkY" />
 
+        <activity
+            android:name="br.com.android.sample.view.mapa.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <!--
+             IMPORTANT: The following activities have to be added to each project 
+			which imports the DroidAR Library
+        -->
         <activity
             android:name="system.ArActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape" />
-
-        <!-- Custom List is used to easily display lists of any type of object -->
-        <activity android:name="gui.CustomListActivity" />
-
-        <!-- the error handler will be automatically displayed when an error appears -->
+            android:screenOrientation="landscape" >
+        </activity> <!-- Custom List is used to easily display lists of any type of object -->
+        <activity android:name="gui.CustomListActivity" >
+        </activity> <!-- the error handler will be automatically displayed when an error appears -->
         <activity
             android:name="system.ErrorHandler"
             android:process=":myexeptionprocess"
@@ -94,17 +110,143 @@
 
                 <data android:mimeType="errors/myUnhandleCatcher" />
             </intent-filter>
-        </activity>
-
-        <!-- is needed to display information on application startup -->
+        </activity> <!-- is needed to display information on application startup -->
         <activity
             android:name="gui.InfoScreen"
-            android:theme="@android:style/Theme.Dialog" />
-
-        <!-- an activity to easily display any kind of ui -->
+            android:theme="@android:style/Theme.Dialog" >
+        </activity> <!-- an activity to easily display any kind of ui -->
         <activity
             android:name="gui.simpleUI.SimpleUIv1"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="br.com.android.sample" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="br.com.android.sample.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <!--
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.br.com.android.sample" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

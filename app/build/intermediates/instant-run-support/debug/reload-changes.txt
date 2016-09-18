@@ -1,13 +1,2 @@
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$id$override.class
+CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/Manifest$permission$override.class
 CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$style$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$string$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$drawable$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$integer$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/android/support/design/R$drawable$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$raw$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$styleable$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/android/support/v7/appcompat/R$drawable$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/rwth/R$drawable$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$mipmap$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$layout$override.class

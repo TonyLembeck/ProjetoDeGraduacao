@@ -21,7 +21,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/message_hello"/>
+        android:text="X: Y: Z:"
+        android:id="@+id/acelerometro"/>
 
     <Button
         android:layout_width="wrap_content"

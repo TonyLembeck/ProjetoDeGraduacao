@@ -18,6 +18,7 @@
 
     <!--/////////////////////////////////////////////////////////////////////////////////////////-->
 
+
     <string name="app_name">CPonto</string>
     <string name="label_inicial">Tela Inicial</string>
     <string name="logo">logo</string>
@@ -25,4 +26,6 @@
     <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
     <string name="e_mail">E-mail:</string>
     <string name="senha">Senha:</string>
+    <string name="nome_completo">Nome Completo:</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

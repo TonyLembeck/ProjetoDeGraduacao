@@ -8,14 +8,21 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.UiThread;
 
 import br.com.android.sample.R;
+import br.com.android.sample.view.cadastro.CadastroUsuarioActivity_;
 import br.com.android.sample.view.authentication.AuthenticationActivity_;
 
 @EActivity(R.layout.inicial_activity)
 public class InicialActivity extends AppCompatActivity {
 
     @UiThread
-    @Click(R.id.login)
+    @Click(R.id.btnLogin)
     public void onLoginClick(){
         super.startActivity( new Intent(this, AuthenticationActivity_.class) );
+    }
+
+    @UiThread
+    @Click(R.id.cadastrarNovaConta)
+    public void onCadastrarNovaContaClick(){
+        super.startActivity( new Intent(this, CadastroUsuarioActivity_.class) );
     }
 }

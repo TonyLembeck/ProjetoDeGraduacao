@@ -14,6 +14,7 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.TextView;
 import br.com.android.sample.R;
 import org.androidannotations.api.UiThreadExecutor;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -73,6 +74,7 @@ public final class HomeActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        this.textView = ((TextView) hasViews.findViewById(R.id.acelerometro));
         View view_buttonAR = hasViews.findViewById(R.id.buttonAR);
 
         if (view_buttonAR!= null) {

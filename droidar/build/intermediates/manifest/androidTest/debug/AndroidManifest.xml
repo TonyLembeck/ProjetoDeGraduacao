@@ -3,8 +3,8 @@
     package="de.rwth.test" >
 
     <uses-sdk
-        android:minSdkVersion="5"
-        android:targetSdkVersion="5" />
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
@@ -36,19 +36,8 @@
         android:normalScreens="true"
         android:smallScreens="true" />
 
-    <application
-        android:debuggable="true"
-        android:icon="@drawable/icon"
-        android:label="@string/app_name" >
+    <application>
         <uses-library android:name="android.test.runner" />
-
-        <activity android:name="de.rwth.TechDemoLauncher" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <!--
              IMPORTANT: The following activities have to be added to each project 
 			which imports the DroidAR Library
@@ -56,7 +45,6 @@
         <activity
             android:name="system.ArActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/app_name"
             android:screenOrientation="landscape" >
         </activity> <!-- Custom List is used to easily display lists of any type of object -->
         <activity android:name="gui.CustomListActivity" >

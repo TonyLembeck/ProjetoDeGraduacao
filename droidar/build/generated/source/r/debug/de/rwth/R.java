@@ -120,7 +120,6 @@ public final class R {
         public static int camaro_obj=0x7f040001;
     }
     public static final class string {
-        public static int app_name=0x7f050000;
-        public static int errorstring=0x7f050001;
+        public static int errorstring=0x7f050000;
     }
 }
