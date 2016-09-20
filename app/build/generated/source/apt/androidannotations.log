@@ -1,1 +1,0 @@
-17:15:27.573 [Daemon worker Thread 46] WARN  o.a.i.h.AndroidManifestFinder:332 - A class activity declared in the AndroidManifest.xml cannot be found in the compile path: [br.com.android.sample.view.mapa.MapsActivity]

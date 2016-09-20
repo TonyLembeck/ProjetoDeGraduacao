@@ -1,2 +1,2 @@
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/Manifest$permission$override.class
 CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/mapa/MapsActivity$override.class

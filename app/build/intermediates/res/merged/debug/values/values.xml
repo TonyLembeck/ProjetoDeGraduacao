@@ -507,9 +507,7 @@
     <string name="decline">Decline</string>
     <string name="e_mail">E-mail:</string>
     <string name="errorstring">de.rwth.error</string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyCSAzZmnwCgS2S5dwHaxekulesf2nrsdkY
-    </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
     <string name="label_applicationName">Android Sample</string>
     <string name="label_authentication">Autenticação do Usuário</string>
     <string name="label_begin">ENTRAR</string>

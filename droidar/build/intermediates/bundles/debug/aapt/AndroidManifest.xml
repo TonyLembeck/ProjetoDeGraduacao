@@ -10,7 +10,7 @@
     -->
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="16" />
+        android:targetSdkVersion="21" />
 
     <!--
          IMPORTANT: The following permissions should also be added to each project 
