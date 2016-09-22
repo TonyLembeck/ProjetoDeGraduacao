@@ -11,8 +11,6 @@
         android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
         android:protectionLevel="signature" />
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/logocponto"
@@ -45,7 +43,7 @@
             android:value="AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA" />
 
         <activity
-            android:name=".view.mapa.MapsActivity"
+            android:name=".view.mapa.MapsActivity_"
             android:label="@string/title_activity_maps"></activity>
     </application>
 

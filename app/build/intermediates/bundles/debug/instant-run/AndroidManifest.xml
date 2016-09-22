@@ -84,7 +84,7 @@
             android:value="AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA" />
 
         <activity
-            android:name="br.com.android.sample.view.mapa.MapsActivity"
+            android:name="br.com.android.sample.view.mapa.MapsActivity_"
             android:label="@string/title_activity_maps" />
         <!--
              IMPORTANT: The following activities have to be added to each project 

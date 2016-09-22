@@ -3,8 +3,13 @@
 
     <string name="label_authentication">Autenticação do Usuário</string>
     <string name="label_begin">ENTRAR</string>
-    <string name="message_enterYourPassword">Entre com sua senha</string>
+    <string name="message_enterSeuNome">Entre com seu nome</string>
     <string name="message_enterYourEmail">Entre com seu email</string>
+    <string name="message_enterDataNascimento">Entre com sua data de nascimento</string>
+    <string name="message_enterSexo">Selecione o sexo</string>
+    <string name="message_enterYourPassword">Entre com sua senha</string>
+    <string name="message_enterSenhasNaoConferem">Senhas não conferem</string>
+    <string name="message_errorNaoFoiPossivelCadastrar">Não foi possível cadastrar. Por favor tente novamente.</string>
     <string name="label_home">Home</string>
     <string name="message_yourPasswordLengthWrong">A senha deve ser maior que 4 digitos.</string>
     <string name="message_errorToAuthenticate">Não foi possível autenticar. Por favor tente novamente.</string>

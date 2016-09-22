@@ -135,17 +135,7 @@ public class AuthenticationActivity extends AppCompatActivity
     {
         try
         {
-            /*
-            final User user = new User();
-            user.setEmail( this.inputEmail.getText().toString() );
-            user.setPassword( this.inputPassword.getText().toString() );
-            user.setDisabled(false);
-            user.setName("Nome de exemplo");
-            user.setRole(UserRole.ADMINISTRATOR);
-            user.setCreated( Calendar.getInstance() );
 
-            this.userRepository.createOrUpdate( user );
-            */
 
             //open the new activity
             super.startActivity( new Intent(this, HomeActivity_.class) );

@@ -24,6 +24,7 @@ import org.androidannotations.annotations.ViewById;
 
 import br.com.android.sample.R;
 import br.com.android.sample.view.mapa.MapsActivity;
+import br.com.android.sample.view.mapa.MapsActivity_;
 import geo.GeoObj;
 import gl.GL1Renderer;
 import gl.GLFactory;
@@ -94,39 +95,43 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
     public void onARClick()
     {
 
-        if (s < 9.0 ) {
+        if (s < 9.0 ) ArActivity.startWithSetup(this, new DefaultARSetup() {
 
-            ArActivity.startWithSetup(this, new DefaultARSetup() {
+            public void addObjectsTo(GL1Renderer renderer, final World world, GLFactory objectFactory) {
 
-                public void addObjectsTo(GL1Renderer renderer, final World world, GLFactory objectFactory) {
+                if (ActivityCompat.checkSelfPermission(HomeActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+                        != PackageManager.PERMISSION_GRANTED) {
 
-                    if (ActivityCompat.checkSelfPermission(HomeActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
-                            != PackageManager.PERMISSION_GRANTED) {
-
-                    } else {
-                        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-                        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                    }
-
-
-                    final Location l = new Location("");
-
-                    l.setLatitude(location.getLatitude() - 0.0005);
-                    l.setLongitude(location.getLongitude());
-                    Obj o = new GeoObj(l);
-                    o.setComp(objectFactory.newArrow());
-                    world.add(o);
+                } else {
+                    locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                    location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                 }
 
-            });
-        }else{
-           super.startActivity( new Intent(this, MapsActivity.class) );
+
+                final Location l = new Location("");
+
+                l.setLatitude(location.getLatitude() - 0.0005);
+                l.setLongitude(location.getLongitude());
+                Obj o = new GeoObj(l);
+                o.setComp(objectFactory.newArrow());
+                world.add(o);
+
+            }
+
+        });
+        else{
+           super.startActivity( new Intent(this, MapsActivity_.class) );
         }
     }
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
+
         s = sensorEvent.values[2];
+        textView.setText("X: " + sensorEvent.values[0] +
+                        "\nY: " + sensorEvent.values[1] +
+                        "\nZ: " + sensorEvent.values[2]);
+
     }
 
     @Override

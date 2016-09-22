@@ -517,8 +517,13 @@
     <string name="label_monitoringService">Serviço de Monitoramento</string>
     <string name="login">Login</string>
     <string name="logo">logo</string>
+    <string name="message_enterDataNascimento">Entre com sua data de nascimento</string>
+    <string name="message_enterSenhasNaoConferem">Senhas não conferem</string>
+    <string name="message_enterSeuNome">Entre com seu nome</string>
+    <string name="message_enterSexo">Selecione o sexo</string>
     <string name="message_enterYourEmail">Entre com seu email</string>
     <string name="message_enterYourPassword">Entre com sua senha</string>
+    <string name="message_errorNaoFoiPossivelCadastrar">Não foi possível cadastrar. Por favor tente novamente.</string>
     <string name="message_errorToAuthenticate">Não foi possível autenticar. Por favor tente novamente.</string>
     <string name="message_hello">Seja bem Vindo!</string>
     <string name="message_loadingData">Aguarde o carregamento dos dados.</string>

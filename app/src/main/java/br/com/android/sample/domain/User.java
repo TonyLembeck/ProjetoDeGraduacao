@@ -1,6 +1,7 @@
 package br.com.android.sample.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -34,6 +35,11 @@ public class User extends AbstractEntity implements Serializable
 	private String email;
 	/**
 	 * 
+	 */
+	@Column(nullable = false)
+	private Date dataNacimento;
+	/**
+	 *
 	 */
 	@Column(nullable = false)
 	private Boolean disabled;
@@ -82,6 +88,7 @@ public class User extends AbstractEntity implements Serializable
 		result = prime * result + ( ( email == null ) ? 0 : email.hashCode() );
 		result = prime * result + ( ( disabled == null ) ? 0 : disabled.hashCode() );
 		result = prime * result + ( ( name == null ) ? 0 : name.hashCode() );
+		result = prime * result + ( ( dataNacimento == null ) ? 0 : dataNacimento.hashCode() );
 		result = prime * result + ( ( password == null ) ? 0 : password.hashCode() );
 		result = prime * result + ( ( role == null ) ? 0 : role.hashCode() );
 		return result;
@@ -117,7 +124,12 @@ public class User extends AbstractEntity implements Serializable
 			if ( other.password != null ) return false;
 		}
 		else if ( !password.equals( other.password ) ) return false;
-		if ( role != other.role ) return false;
+		if ( dataNacimento == null )
+		{
+			if ( other.dataNacimento != null ) return false;
+		}
+		else if ( !dataNacimento.equals( other.dataNacimento ) ) return false;
+
 		return true;
 	}
 
@@ -200,4 +212,22 @@ public class User extends AbstractEntity implements Serializable
 	{
 		this.password = password;
 	}
+
+	/**
+	 * @return the dataNacimento
+	 */
+	public Date getDataNacimento()
+	{
+		return dataNacimento;
+	}
+
+	/**
+	 * @param dataNacimento
+	 *            the dataNacimento to set
+	 */
+	public void setDataNacimento( Date dataNacimento )
+	{
+		this.dataNacimento = dataNacimento;
+	}
+
 }
