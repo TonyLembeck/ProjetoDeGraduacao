@@ -8,8 +8,8 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.UiThread;
 
 import br.com.android.sample.R;
-import br.com.android.sample.view.cadastro.CadastroUsuarioActivity_;
-import br.com.android.sample.view.authentication.AuthenticationActivity_;
+import br.com.android.sample.view.autenticacao.LoginActivity;
+import br.com.android.sample.view.autenticacao.CadastrarUsuarioActivity;
 
 @EActivity(R.layout.inicial_activity)
 public class InicialActivity extends AppCompatActivity {
@@ -17,12 +17,12 @@ public class InicialActivity extends AppCompatActivity {
     @UiThread
     @Click(R.id.btnLogin)
     public void onLoginClick(){
-        super.startActivity( new Intent(this, AuthenticationActivity_.class) );
+        super.startActivity( new Intent(this, LoginActivity.class) );
     }
 
     @UiThread
     @Click(R.id.cadastrarNovaConta)
     public void onCadastrarNovaContaClick(){
-        super.startActivity( new Intent(this, CadastroUsuarioActivity_.class) );
+        super.startActivity( new Intent(this, CadastrarUsuarioActivity.class) );
     }
 }

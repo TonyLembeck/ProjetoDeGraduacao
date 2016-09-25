@@ -58,7 +58,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
-            android:name="br.com.android.sample.view.inicial.InicialActivity_"
+            android:name="br.com.android.sample.view.autenticacao.LoginActivity_"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -68,14 +68,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.android.sample.view.home.HomeActivity_"
-            android:label="@string/label_home" />
-        <activity
-            android:name="br.com.android.sample.view.authentication.AuthenticationActivity_"
-            android:label="@string/label_authentication"
+            android:name="br.com.android.sample.view.autenticacao.CadastrarUsuarioActivity_"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.android.sample.view.cadastro.CadastroUsuarioActivity_"
+            android:name="br.com.android.sample.view.autenticacao.ResetActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="br.com.android.sample.view.autenticacao.UpdateActivity_"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -85,6 +84,7 @@
         <activity
             android:name="br.com.android.sample.view.mapa.MapsActivity_"
             android:label="@string/title_activity_maps" />
+        <activity android:name="br.com.android.sample.view.detalhesDoPonto.DetalhesPontoActivity" />
         <!--
              IMPORTANT: The following activities have to be added to each project 
 			which imports the DroidAR Library

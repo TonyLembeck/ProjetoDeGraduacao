@@ -6,7 +6,6 @@
     <string name="message_enterSeuNome">Entre com seu nome</string>
     <string name="message_enterYourEmail">Entre com seu email</string>
     <string name="message_enterDataNascimento">Entre com sua data de nascimento</string>
-    <string name="message_enterSexo">Selecione o sexo</string>
     <string name="message_enterYourPassword">Entre com sua senha</string>
     <string name="message_enterSenhasNaoConferem">Senhas não conferem</string>
     <string name="message_errorNaoFoiPossivelCadastrar">Não foi possível cadastrar. Por favor tente novamente.</string>
@@ -33,4 +32,17 @@
     <string name="senha">Senha:</string>
     <string name="nome_completo">Nome Completo:</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_google">Google</string>
+    <string name="recuperar_senha">Recuperar Senha</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="action_sign_up_short">Cadastro</string>
+    <string name="atualizar_login">Atualizar login</string>
+    <string name="atualiza_profile">Atualizar profile</string>
+    <string name="reset">Recuperar acesso</string>
+    <string name="iniciar_rec_acesso">Iniciar recuperação acesso</string>
+    <string name="confirmar_senha">Confirmar Senha:</string>
+    <string name="dataNascimento">Data de Nascimento:</string>
+    <string name="title_activity_teste">TesteActivity</string>
+
 </resources>

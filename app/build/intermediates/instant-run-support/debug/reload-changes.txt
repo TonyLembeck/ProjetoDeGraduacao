@@ -1,7 +1,4 @@
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity_$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity_$IntentBuilder_$override.class
+CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/R$id$override.class
 CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity_$2$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity_$3$override.class
-CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/cadastro/CadastroUsuarioActivity_$1$override.class
+CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/mapa/MapsActivity_$override.class
+CHANGED,/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/br/com/android/sample/view/mapa/MapsActivity$override.class

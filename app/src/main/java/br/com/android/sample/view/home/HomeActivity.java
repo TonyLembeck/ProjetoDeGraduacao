@@ -23,7 +23,6 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import br.com.android.sample.R;
-import br.com.android.sample.view.mapa.MapsActivity;
 import br.com.android.sample.view.mapa.MapsActivity_;
 import geo.GeoObj;
 import gl.GL1Renderer;

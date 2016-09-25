@@ -12,19 +12,26 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.UiThread;
+import org.androidannotations.annotations.ViewById;
 
 import br.com.android.sample.R;
 import br.com.android.sample.view.home.HomeActivity;
+import br.com.android.sample.view.home.HomeActivity_;
 import geo.GeoObj;
 import gl.GL1Renderer;
 import gl.GLFactory;
@@ -37,37 +44,23 @@ import worldData.World;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, SensorEventListener {
 
     private GoogleMap mMap;
+    private SupportMapFragment mapFragment;
     private Location location;
     private LocationManager locationManager;
+
+    @ViewById(R.id.fab)
+    Button buttonFag;
 
     @AfterViews
     public void onAfterViews()
     {
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+       mapFragment.getMapAsync(this);
+
+
     }
-    /*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-    }*/
 
-
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -85,34 +78,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         sydney = new LatLng(50.396013, 9.845035);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Alemanha"));
+
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                Intent intent = new Intent();
+                return false;
+            }
+        });
+
+        
     }
+
+    @UiThread
+    @Click(R.id.fab)
+    public void onFabClick(){
+        startActivity(new Intent(this, HomeActivity_.class));
+    }
+
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        if (sensorEvent.values[2] < 9.0)
-            ArActivity.startWithSetup(this, new DefaultARSetup() {
-
-                public void addObjectsTo(GL1Renderer renderer, final World world, GLFactory objectFactory) {
-
-                    if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
-                            != PackageManager.PERMISSION_GRANTED) {
-
-                    } else {
-                        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-                        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                    }
-
-
-                    final Location l = new Location("");
-
-                    l.setLatitude(location.getLatitude() - 0.0005);
-                    l.setLongitude(location.getLongitude());
-                    Obj o = new GeoObj(l);
-                    o.setComp(objectFactory.newArrow());
-                    world.add(o);
-                }
-
-            });
+        //if (sensorEvent.values[2] < 8.0)
     }
 
     @Override

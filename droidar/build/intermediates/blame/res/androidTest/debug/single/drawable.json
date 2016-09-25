@@ -96,24 +96,24 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/icon3.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/infogray.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/infogray.png"
-    },
-    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/p3.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/p3.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/infogray.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/infogray.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/warningcirclered.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/warningcirclered.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/mapdotyellow.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/mapdotyellow.png"
-    },
-    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/incorrectcirclegray.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/incorrectcirclegray.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/mapdotyellow.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/bundles/debug/res/drawable/mapdotyellow.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/droidar/build/intermediates/res/merged/androidTest/debug/drawable/starboxgreen.png",

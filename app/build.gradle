@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
@@ -58,6 +59,7 @@ dependencies {
     apt 'org.androidannotations:ormlite:4.1.0'
     testCompile 'junit:junit:4.12'
     compile project(':droidar')
+
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
     compile 'com.j256.ormlite:ormlite-android:5.0'
     compile 'com.android.support:appcompat-v7:24.2.1'
@@ -66,8 +68,15 @@ dependencies {
     compile 'org.androidannotations:androidannotations-api:4.1.0'
     compile 'org.androidannotations:ormlite-api:4.1.0'
     compile 'com.google.android.gms:play-services:9.4.0'
+    compile 'com.google.firebase:firebase-core:9.4.0'
+    compile 'com.google.firebase:firebase-database:9.4.0'
+    compile 'com.google.firebase:firebase-storage:9.4.0'
+    compile 'com.google.firebase:firebase-auth:9.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
 }
-
+apply plugin: 'com.google.gms.google-services'
 apt {
     arguments {
         androidManifestFile variant.outputs[0]?.processResources?.manifestFile

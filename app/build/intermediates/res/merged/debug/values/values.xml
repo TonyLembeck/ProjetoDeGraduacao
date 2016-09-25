@@ -441,9 +441,14 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accept">Accept</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up_short">Cadastro</string>
     <string name="app_name">CPonto</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="atualiza_profile">Atualizar profile</string>
+    <string name="atualizar_login">Atualizar login</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="cadastrar">Cadastrar</string>
     <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
     <string name="cast_casting_to_device">Casting to %1$s</string>
     <string name="cast_closed_captions">Closed captions</string>
@@ -502,12 +507,22 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="confirmar_senha">Confirmar Senha:</string>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
+    <string name="dataNascimento">Data de Nascimento:</string>
     <string name="decline">Decline</string>
+    <string name="default_web_client_id" translatable="false">485605244921-6ti967af6cbmar1hfrteuebcs0n5ans5.apps.googleusercontent.com</string>
     <string name="e_mail">E-mail:</string>
     <string name="errorstring">de.rwth.error</string>
+    <string name="firebase_database_url" translatable="false">https://projeto-de-graduacao.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">485605244921</string>
+    <string name="google_api_key" translatable="false">AIzaSyDfgVPXBNrEgtZBMDMaRrasZ5Wzr2C2CGY</string>
+    <string name="google_app_id" translatable="false">1:485605244921:android:dab1deb5c01d64f4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDfgVPXBNrEgtZBMDMaRrasZ5Wzr2C2CGY</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
+    <string name="google_storage_bucket" translatable="false">projeto-de-graduacao.appspot.com</string>
+    <string name="iniciar_rec_acesso">Iniciar recuperação acesso</string>
     <string name="label_applicationName">Android Sample</string>
     <string name="label_authentication">Autenticação do Usuário</string>
     <string name="label_begin">ENTRAR</string>
@@ -520,7 +535,6 @@
     <string name="message_enterDataNascimento">Entre com sua data de nascimento</string>
     <string name="message_enterSenhasNaoConferem">Senhas não conferem</string>
     <string name="message_enterSeuNome">Entre com seu nome</string>
-    <string name="message_enterSexo">Selecione o sexo</string>
     <string name="message_enterYourEmail">Entre com seu email</string>
     <string name="message_enterYourPassword">Entre com sua senha</string>
     <string name="message_errorNaoFoiPossivelCadastrar">Não foi possível cadastrar. Por favor tente novamente.</string>
@@ -544,6 +558,8 @@
     <string name="nome_completo">Nome Completo:</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
+    <string name="recuperar_senha">Recuperar Senha</string>
+    <string name="reset">Recuperar acesso</string>
     <string name="search_menu_title">Search</string>
     <string name="senha">Senha:</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -553,6 +569,8 @@
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_google">Google</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -573,6 +591,8 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

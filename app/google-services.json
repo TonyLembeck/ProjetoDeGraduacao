@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "485605244921",
+    "firebase_url": "https://projeto-de-graduacao.firebaseio.com",
+    "project_id": "projeto-de-graduacao",
+    "storage_bucket": "projeto-de-graduacao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485605244921:android:dab1deb5c01d64f4",
+        "android_client_info": {
+          "package_name": "br.com.android.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485605244921-tsddb5kir8pldsafpn2kvsm373e6ngv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.android.sample",
+            "certificate_hash": "91DBF0D156BC24CFD9F5EF76317C13D56C440DC1"
+          }
+        },
+        {
+          "client_id": "485605244921-6ti967af6cbmar1hfrteuebcs0n5ans5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfgVPXBNrEgtZBMDMaRrasZ5Wzr2C2CGY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485605244921-6ti967af6cbmar1hfrteuebcs0n5ans5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.android.sample">
 
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="br.com.android.sample.view.mapa.MAPS_RECEVE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
         android:protectionLevel="signature" />
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".view.inicial.InicialActivity_"
+            android:name=".view.autenticacao.LoginActivity_"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -28,14 +28,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.home.HomeActivity_"
-            android:label="@string/label_home" />
-        <activity
-            android:name=".view.authentication.AuthenticationActivity_"
-            android:label="@string/label_authentication"
+            android:name=".view.autenticacao.CadastrarUsuarioActivity_"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.cadastro.CadastroUsuarioActivity_"
+            android:name=".view.autenticacao.ResetActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.autenticacao.UpdateActivity_"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -44,7 +43,8 @@
 
         <activity
             android:name=".view.mapa.MapsActivity_"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".view.detalhesDoPonto.DetalhesPontoActivity" />
     </application>
 
 </manifest>

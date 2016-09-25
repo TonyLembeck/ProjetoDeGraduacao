@@ -24,6 +24,7 @@ import br.com.android.sample.domain.User;
 import br.com.android.sample.domain.UserRole;
 import br.com.android.sample.infrastructure.mask.Mask;
 import br.com.android.sample.infrastructure.repository.RepositoryHelper;
+
 import br.com.android.sample.view.mapa.MapsActivity_;
 import eu.inmite.android.lib.validations.form.FormValidator;
 import eu.inmite.android.lib.validations.form.annotations.MinLength;

@@ -19,11 +19,9 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.ormlite.annotations.OrmLiteDao;
 
-import java.util.Calendar;
 
 import br.com.android.sample.R;
 import br.com.android.sample.domain.User;
-import br.com.android.sample.domain.UserRole;
 import br.com.android.sample.infrastructure.repository.RepositoryHelper;
 import br.com.android.sample.view.home.HomeActivity_;
 import eu.inmite.android.lib.validations.form.FormValidator;
