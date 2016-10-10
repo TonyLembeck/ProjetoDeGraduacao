@@ -76,6 +76,7 @@ public final class HomeActivity_
     public void onViewChanged(HasViews hasViews) {
         this.textView = ((TextView) hasViews.findViewById(R.id.acelerometro));
         View view_buttonAR = hasViews.findViewById(R.id.buttonAR);
+        View view_mapss = hasViews.findViewById(R.id.mapss);
 
         if (view_buttonAR!= null) {
             view_buttonAR.setOnClickListener(new OnClickListener() {
@@ -83,6 +84,16 @@ public final class HomeActivity_
                 @Override
                 public void onClick(View view) {
                     HomeActivity_.this.onARClick();
+                }
+            }
+            );
+        }
+        if (view_mapss!= null) {
+            view_mapss.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    HomeActivity_.this.onMapsClick();
                 }
             }
             );
@@ -97,6 +108,18 @@ public final class HomeActivity_
             @Override
             public void run() {
                 HomeActivity_.super.onARClick();
+            }
+        }
+        , 0L);
+    }
+
+    @Override
+    public void onMapsClick() {
+        UiThreadExecutor.runTask("", new Runnable() {
+
+            @Override
+            public void run() {
+                HomeActivity_.super.onMapsClick();
             }
         }
         , 0L);

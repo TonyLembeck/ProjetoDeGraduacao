@@ -16,13 +16,14 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.storage.FirebaseStorage;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 import br.com.android.sample.R;
 import br.com.android.sample.infrastructure.mask.Mask;
-import br.com.android.sample.view.autenticacao.domain.User;
+import br.com.android.sample.domain.User;
 
 @EActivity(R.layout.activity_cadastrar_usuario)
 public class CadastrarUsuarioActivity extends ComumActivity implements DatabaseReference.CompletionListener {

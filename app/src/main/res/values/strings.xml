@@ -44,5 +44,20 @@
     <string name="confirmar_senha">Confirmar Senha:</string>
     <string name="dataNascimento">Data de Nascimento:</string>
     <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_activity_maps_teste">MapsTesteActivity</string>
+    <string name="title_activity_medicao">MedicaoActivity</string>
+
+
+    <!--///////////////////////////////// Cadastro //////////////////////////////////////////////-->
+    <string name="altura_usuario">Usuário: </string>
+    <string name="distancia">Distância: </string>
+    <string name="altura">Altura: </string>
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitude: </string>
+    <string name="cadastrar_ponto">Cadastrar Ponto</string>
+    <string name="nome">Nome:</string>
+    <string name="foto">Foto:</string>
+    <string name="comentario">Comentario:</string>
+
 
 </resources>

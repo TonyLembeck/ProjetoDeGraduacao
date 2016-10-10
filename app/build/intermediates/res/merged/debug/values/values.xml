@@ -35,6 +35,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="azul">#280ef0</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -443,6 +444,8 @@
     <string name="accept">Accept</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_sign_up_short">Cadastro</string>
+    <string name="altura">Altura: </string>
+    <string name="altura_usuario">Usuário: </string>
     <string name="app_name">CPonto</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="atualiza_profile">Atualizar profile</string>
@@ -450,6 +453,7 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cadastrar_nova_conta">Cadastrar Nova Conta</string>
+    <string name="cadastrar_ponto">Cadastrar Ponto</string>
     <string name="cast_casting_to_device">Casting to %1$s</string>
     <string name="cast_closed_captions">Closed captions</string>
     <string name="cast_closed_captions_unavailable">Closed captions unavailable</string>
@@ -487,6 +491,7 @@
     <string name="cast_tracks_chooser_dialog_subtitles">Subtitles</string>
     <string name="cast_unmute">Unmute</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="comentario">Comentario:</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -513,14 +518,16 @@
     <string name="dataNascimento">Data de Nascimento:</string>
     <string name="decline">Decline</string>
     <string name="default_web_client_id" translatable="false">485605244921-6ti967af6cbmar1hfrteuebcs0n5ans5.apps.googleusercontent.com</string>
+    <string name="distancia">Distância: </string>
     <string name="e_mail">E-mail:</string>
     <string name="errorstring">de.rwth.error</string>
     <string name="firebase_database_url" translatable="false">https://projeto-de-graduacao.firebaseio.com</string>
+    <string name="foto">Foto:</string>
     <string name="gcm_defaultSenderId" translatable="false">485605244921</string>
-    <string name="google_api_key" translatable="false">AIzaSyDfgVPXBNrEgtZBMDMaRrasZ5Wzr2C2CGY</string>
+    <string name="google_api_key" translatable="false">AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA</string>
     <string name="google_app_id" translatable="false">1:485605244921:android:dab1deb5c01d64f4</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDfgVPXBNrEgtZBMDMaRrasZ5Wzr2C2CGY</string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA</string>
     <string name="google_storage_bucket" translatable="false">projeto-de-graduacao.appspot.com</string>
     <string name="iniciar_rec_acesso">Iniciar recuperação acesso</string>
     <string name="label_applicationName">Android Sample</string>
@@ -530,8 +537,10 @@
     <string name="label_inicial">Tela Inicial</string>
     <string name="label_loading">Carregando...</string>
     <string name="label_monitoringService">Serviço de Monitoramento</string>
+    <string name="latitude">Latitude: </string>
     <string name="login">Login</string>
     <string name="logo">logo</string>
+    <string name="longitude">Longitude: </string>
     <string name="message_enterDataNascimento">Entre com sua data de nascimento</string>
     <string name="message_enterSenhasNaoConferem">Senhas não conferem</string>
     <string name="message_enterSeuNome">Entre com seu nome</string>
@@ -555,6 +564,7 @@
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
+    <string name="nome">Nome:</string>
     <string name="nome_completo">Nome Completo:</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
@@ -569,6 +579,8 @@
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_teste">MapsTesteActivity</string>
+    <string name="title_activity_medicao">MedicaoActivity</string>
     <string name="title_activity_teste">TesteActivity</string>
     <string name="title_google">Google</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>

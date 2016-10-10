@@ -3,7 +3,6 @@ package br.com.android.sample.view.autenticacao;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -25,24 +24,18 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.crash.FirebaseCrash;
 
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.SystemService;
-import org.androidannotations.annotations.ViewById;
 
 import br.com.android.sample.R;
-import br.com.android.sample.view.autenticacao.domain.User;
-import br.com.android.sample.view.mapa.MapsActivity_;
-import eu.inmite.android.lib.validations.form.FormValidator;
-import eu.inmite.android.lib.validations.form.annotations.MinLength;
-import eu.inmite.android.lib.validations.form.annotations.NotEmpty;
-import eu.inmite.android.lib.validations.form.callback.SimpleErrorPopupCallback;
+import br.com.android.sample.domain.User;
+import br.com.android.sample.view.mapa.MapsActivity;
 
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends ComumActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private static final int RC_SIGN_IN_GOOGLE = 7859;
+    private static final int LOGOFF = 1;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -107,7 +100,6 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
             mAuth.removeAuthStateListener( mAuthListener );
         }
     }
-
 
     private void accessGoogleLoginData(String accessToken){
         accessLoginData(
@@ -223,8 +215,8 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
 
 
     private void callMainActivity(){
-        Intent intent = new Intent( this, MapsActivity_.class );
-        startActivity(intent);
+        Intent intent = new Intent( this, MapsActivity.class );
+        startActivityForResult(intent, LOGOFF);
         finish();
     }
 

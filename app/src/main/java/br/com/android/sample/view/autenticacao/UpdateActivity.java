@@ -1,6 +1,5 @@
 package br.com.android.sample.view.autenticacao;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -18,7 +17,7 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 import br.com.android.sample.R;
-import br.com.android.sample.view.autenticacao.domain.User;
+import br.com.android.sample.domain.User;
 
 @EActivity(R.layout.activity_update)
 public class UpdateActivity extends AppCompatActivity implements ValueEventListener, DatabaseReference.CompletionListener {

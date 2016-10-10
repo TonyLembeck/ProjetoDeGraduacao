@@ -1,5 +1,3 @@
-
-
 package br.com.android.sample.view.home;
 
 import android.Manifest;
@@ -23,7 +21,7 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import br.com.android.sample.R;
-import br.com.android.sample.view.mapa.MapsActivity_;
+import br.com.android.sample.view.cadastrar.MedicaoActivity;
 import geo.GeoObj;
 import gl.GL1Renderer;
 import gl.GLFactory;
@@ -39,62 +37,29 @@ import worldData.World;
 @EActivity(R.layout.home_activity)
 public class HomeActivity extends AppCompatActivity implements SensorEventListener
 {
-    /*-------------------------------------------------------------------
-	 * 		 					ATTRIBUTES
-	 *-------------------------------------------------------------------*/
-    //---------
-    //view elements
-    //---------
-
-    //---------
-    //system services
-    //---------
-
-    //---------
-    //delegates
-    //---------
-
-    //---------
-    //repository
-    //---------
-
-    /*-------------------------------------------------------------------
-	 * 		 					   INITIALIZERS
-	 *-------------------------------------------------------------------*/
 
     Sensor sensor;
     SensorManager sensorManager;
     @ViewById(R.id.acelerometro)
     TextView textView;
-    private float s;
-
-
-    /**
-     *
-     */
-    @AfterViews
-    public void onAfterViews() {
-
-       sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
-
-
-    }
-
 
     private Location location;
     private LocationManager locationManager;
+    private boolean controleDeEstados = true;
 
-    /**
-     *
-     */
+    @AfterViews
+    public void onAfterViews() {
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+
     @UiThread
     @Click(R.id.buttonAR)
     public void onARClick()
     {
-
-        if (s < 9.0 ) ArActivity.startWithSetup(this, new DefaultARSetup() {
+        ArActivity.startWithSetup(this, new DefaultARSetup() {
 
             public void addObjectsTo(GL1Renderer renderer, final World world, GLFactory objectFactory) {
 
@@ -105,7 +70,6 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                     locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
                     location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                 }
-
 
                 final Location l = new Location("");
 
@@ -118,19 +82,35 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             }
 
         });
-        else{
-           super.startActivity( new Intent(this, MapsActivity_.class) );
-        }
+    }
+
+    @UiThread
+    @Click(R.id.mapss)
+    public void onMapsClick(){
+        startActivity(new Intent(HomeActivity.this, MedicaoActivity.class));
     }
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
-        s = sensorEvent.values[2];
-        textView.setText("X: " + sensorEvent.values[0] +
-                        "\nY: " + sensorEvent.values[1] +
-                        "\nZ: " + sensorEvent.values[2]);
+       /* if ((sensorEvent.values[2] > 8.5) && controleDeEstados) {
+            controleDeEstados = false;
+            Intent intent = new Intent(this, MapsActivity_.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
 
+        }*/
+        textView.setText("X: " + sensorEvent.values[0] +
+                "\nY: " + sensorEvent.values[1] +
+                "\nZ: " + sensorEvent.values[2]);
+
+    }
+    @Override
+    public void onPause(){
+        super.onPause();
+        controleDeEstados = false;
+        finish();
     }
 
     @Override
@@ -138,7 +118,4 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-	/*-------------------------------------------------------------------
-	 * 		 					   BEHAVIORS
-	 *-------------------------------------------------------------------*/
 }

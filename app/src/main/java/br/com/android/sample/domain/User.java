@@ -1,233 +1,186 @@
 package br.com.android.sample.domain;
 
-import java.io.Serializable;
+import android.content.Context;
+
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import br.com.android.sample.domain.util.LibraryClass;
+import br.com.android.sample.domain.util.SHA256;
 
-/**
- *
- */
-@Entity
-public class User extends AbstractEntity implements Serializable
-{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -4052986759552589018L;
+public class User {
+    public static String PROVIDER = "br.com.android.sample.domain.User.PROVIDER";
 
-	/*-------------------------------------------------------------------
-	 *				 		     ATTRIBUTES
-	 *-------------------------------------------------------------------*/
-	// Basic
-	/**
-	 * 
-	 */
-	@Column(nullable = false, length = 50)
-	private String name;
-	/**
-	 * 
-	 */
-	@Column(nullable = false, length = 144, unique = true)
-	private String email;
-	/**
-	 * 
-	 */
-	@Column(nullable = false)
-	private Date dataNacimento;
-	/**
-	 *
-	 */
-	@Column(nullable = false)
-	private Boolean disabled;
-	/**
-	 * 
-	 */
-	@Column(nullable = false, length = 100)
-	private String password;
-	/**
-	 * 
-	 */
-	@Column(nullable = false)
-	@Enumerated(EnumType.ORDINAL)
-	private UserRole role;
 
-	/*-------------------------------------------------------------------
-	 * 		 					CONSTRUCTORS
-	 *-------------------------------------------------------------------*/
-	/**
-	 * 
-	 */
-	public User()
-	{
-	}
+    private String id;
+    private String name;
+    private String email;
+    private Date data;
+    private String password;
+    private String newPassword;
 
-	/**
-	 * 
-	 * @param id
-	 */
-	public User( Long id )
-	{
-		super( id );
-	}
 
-	/*-------------------------------------------------------------------
-	 *							BEHAVIORS
-	 *-------------------------------------------------------------------*/
-	/* (non-Javadoc)
-	 * @see java.lang.Object#hashCode()
-	 */
-	@Override
-	public int hashCode()
-	{
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + ( ( email == null ) ? 0 : email.hashCode() );
-		result = prime * result + ( ( disabled == null ) ? 0 : disabled.hashCode() );
-		result = prime * result + ( ( name == null ) ? 0 : name.hashCode() );
-		result = prime * result + ( ( dataNacimento == null ) ? 0 : dataNacimento.hashCode() );
-		result = prime * result + ( ( password == null ) ? 0 : password.hashCode() );
-		result = prime * result + ( ( role == null ) ? 0 : role.hashCode() );
-		return result;
-	}
+    public User(){}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#equals(java.lang.Object)
-	 */
-	@Override
-	public boolean equals( Object obj )
-	{
-		if ( this == obj ) return true;
-		if ( !super.equals( obj ) ) return false;
-		if ( getClass() != obj.getClass() ) return false;
-		User other = ( User ) obj;
-		if ( email == null )
-		{
-			if ( other.email != null ) return false;
-		}
-		else if ( !email.equals( other.email ) ) return false;
-		if ( disabled == null )
-		{
-			if ( other.disabled != null ) return false;
-		}
-		else if ( !disabled.equals( other.disabled ) ) return false;
-		if ( name == null )
-		{
-			if ( other.name != null ) return false;
-		}
-		else if ( !name.equals( other.name ) ) return false;
-		if ( password == null )
-		{
-			if ( other.password != null ) return false;
-		}
-		else if ( !password.equals( other.password ) ) return false;
-		if ( dataNacimento == null )
-		{
-			if ( other.dataNacimento != null ) return false;
-		}
-		else if ( !dataNacimento.equals( other.dataNacimento ) ) return false;
 
-		return true;
-	}
 
-	/*-------------------------------------------------------------------
-	 *						GETTERS AND SETTERS
-	 *-------------------------------------------------------------------*/
-	
-	/**
-	 * @param disabled
-	 *            the enabled to set
-	 */
-	public void setDisabled( Boolean disabled )
-	{
-		this.disabled = disabled;
-	}
-	
-	/**
-	 *
-	 */
-	public Boolean getDisabled()
-	{
-		return this.disabled;
-	}
-	
-	/**
-	 * @return the name
-	 */
-	public String getName()
-	{
-		return name;
-	}
-	/**
-	 * @param name
-	 *            the name to set
-	 */
-	public void setName( String name )
-	{
-		this.name = name;
-	}
+    public String getId() {
+        return id;
+    }
 
-	/**
-	 * @return the email
-	 */
-	public String getEmail()
-	{
-		return email;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	/**
-	 * @param email
-	 *            the email to set
-	 */
-	public void setEmail( String email )
-	{
-		this.email = email;
-	}
+    public boolean isSocialNetworkLogged( Context context ){
+        String token = getProviderSP( context );
+        return( token.contains("facebook") || token.contains("google") || token.contains("twitter") || token.contains("github") );
+    }
 
-	/**
-	 * @return the role
-	 */
-	public UserRole getRole()
-	{
-		return role;
-	}
 
-	/**
-	 * @param userRole
-	 *            the role to set
-	 */
-	public void setRole( UserRole userRole )
-	{
-		this.role = userRole;
-	}
 
-	/**
-	 * @param password
-	 *            the password to set
-	 */
-	public void setPassword( String password )
-	{
-		this.password = password;
-	}
+    public String getName() {
+        return name;
+    }
 
-	/**
-	 * @return the dataNacimento
-	 */
-	public Date getDataNacimento()
-	{
-		return dataNacimento;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	/**
-	 * @param dataNacimento
-	 *            the dataNacimento to set
-	 */
-	public void setDataNacimento( Date dataNacimento )
-	{
-		this.dataNacimento = dataNacimento;
-	}
+    private void setNameInMap( Map<String, Object> map ) {
+        if( getName() != null ){
+            map.put( "name", getName() );
+        }
+    }
 
+    public void setNameIfNull(String name) {
+        if( this.name == null ){
+            this.name = name;
+        }
+    }
+
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    private void setEmailInMap( Map<String, Object> map ) {
+        if( getEmail() != null ){
+            map.put( "email", getEmail() );
+        }
+    }
+
+    public void setEmailIfNull(String email) {
+        if( this.email == null ){
+            this.email = email;
+        }
+
+    }
+
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = new Date(data);
+    }
+
+    private void setDataInMap( Map<Date, Object> map ) {
+        if( getData() != null ){
+            map.put(Calendar.getInstance().getTime(), getData() );
+        }
+    }
+
+    public void setDataIfNull(Date data) {
+        if( this.data == null ){
+            this.data = data;
+        }
+    }
+
+
+
+
+    @Exclude
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {this.password = SHA256.getSHA256(password);}
+
+
+
+    @Exclude
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {this.newPassword = SHA256.getSHA256(password);}
+
+
+
+
+    public void saveProviderSP(Context context, String token ){
+        LibraryClass.saveSP( context, PROVIDER, token );
+    }
+    public String getProviderSP(Context context ){
+        return( LibraryClass.getSP( context, PROVIDER) );
+    }
+
+
+
+    public void saveDB( DatabaseReference.CompletionListener... completionListener ){
+        DatabaseReference firebase = LibraryClass.getFirebase().child("users").child( getId() );
+
+        if( completionListener.length == 0 ){
+            firebase.setValue(this);
+        }
+        else{
+            firebase.setValue(this, completionListener[0]);
+        }
+    }
+
+    public void updateDB( DatabaseReference.CompletionListener... completionListener ){
+
+        DatabaseReference firebase = LibraryClass.getFirebase().child("users").child( getId() );
+
+        Map<String, Object> map = new HashMap<>();
+        setNameInMap(map);
+        setEmailInMap(map);
+
+        if( map.isEmpty() ){
+            return;
+        }
+
+        if( completionListener.length > 0 ){
+            firebase.updateChildren(map, completionListener[0]);
+        }
+        else{
+            firebase.updateChildren(map);
+        }
+    }
+
+    public void removeDB( DatabaseReference.CompletionListener completionListener ){
+
+        DatabaseReference firebase = LibraryClass.getFirebase().child("users").child( getId() );
+        firebase.setValue(null, completionListener);
+    }
+
+    public void contextDataDB( Context context ){
+        DatabaseReference firebase = LibraryClass.getFirebase().child("users").child( getId() );
+
+        firebase.addListenerForSingleValueEvent( (ValueEventListener) context );
+    }
 }
