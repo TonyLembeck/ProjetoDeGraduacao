@@ -58,6 +58,7 @@
     <string name="nome">Nome:</string>
     <string name="foto">Foto:</string>
     <string name="comentario">Comentario:</string>
+    <string name="action_settings">Settings</string>
 
 
 </resources>

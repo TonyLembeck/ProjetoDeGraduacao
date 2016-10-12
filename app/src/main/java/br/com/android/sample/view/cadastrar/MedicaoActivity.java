@@ -20,6 +20,8 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.UUID;
+
 import br.com.android.sample.R;
 import br.com.android.sample.infrastructure.calcular.Calcular;
 
@@ -47,6 +49,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
     private static double eixoZOrien;
     private static double eixoZAccel;
     private static double eixoYOrien;
+    private static double pressao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,20 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
         tvLongitude = (TextView) findViewById(R.id.longitude);
 
 
+        Intent intent = getIntent();
+        if (intent != null) {
+            Bundle params = intent.getExtras();
+            if (params != null){
+                latitude = params.getDouble("latitude");
+                longitude = params.getDouble("longitude");
+            }
+        }
+
+        if(latitude != 0 && longitude != 0) {
+            tvLatitude.setText(this.getString(R.string.latitude) + " " + latitude);
+            tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
+        }
+
         // Create an instance of Camera
         camera = getCameraInstance();
 
@@ -74,6 +91,8 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
 
         alturaUsuario = 1.70;
@@ -102,11 +121,14 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
         }else {
             tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " m");
             altura = Calcular.altura(alturaUsuario, distancia, eixoZOrien, eixoZAccel);
-            tvAltura.setText(this.getString(R.string.altura) + " " + altura + " m");
-            latitude = Calcular.latitude(distancia, eixoYOrien, location.getLatitude());
-            tvLatitude.setText(this.getString(R.string.latitude) + " " + latitude);
-            longitude = Calcular.longitude(distancia, eixoYOrien, location.getLongitude());
-            tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
+            altitude = location.getAltitude() + altura;
+            tvAltura.setText(this.getString(R.string.altura) + " " + altitude + " m");
+            if (latitude == 0 && longitude == 0) {
+                latitude = Calcular.latitude(distancia, eixoYOrien, location.getLatitude());
+                tvLatitude.setText(this.getString(R.string.latitude) + " " + latitude);
+                longitude = Calcular.longitude(distancia, eixoYOrien, location.getLongitude());
+                tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
+            }
         }
 
     }
@@ -117,11 +139,16 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
     }
 
     public void onCadPontoClick(View view) {
-        Intent intent = new Intent(MedicaoActivity.this, CadastrarPontoActivity.class);
-        intent.putExtra("altura", altura);
-        intent.putExtra("latitude", latitude);
-        intent.putExtra("longitude", longitude);
-        startActivityForResult(intent, 0);
+        if (altitude > 0) {
+            Intent intent = new Intent(MedicaoActivity.this, CadastrarPontoActivity.class);
+            intent.putExtra("altura", altura);
+            intent.putExtra("altitude", altitude);
+            intent.putExtra("latitude", latitude);
+            intent.putExtra("longitude", longitude);
+            startActivityForResult(intent, 0);
+        } else {
+            Toast.makeText(MedicaoActivity.this, "Favor cálcular a distância e a altura!", Toast.LENGTH_LONG).show();
+        }
     }
 
     /** A safe way to get an instance of the Camera object. */
@@ -144,6 +171,9 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                 break;
             case Sensor.TYPE_ACCELEROMETER:
                 eixoZAccel = sensorEvent.values[2];
+                break;
+            case Sensor.TYPE_PRESSURE:
+                pressao = sensorEvent.values[0];
         }
 
     }

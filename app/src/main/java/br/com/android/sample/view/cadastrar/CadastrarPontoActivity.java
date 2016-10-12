@@ -30,22 +30,20 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.util.Calendar;
+import java.util.UUID;
 
 import br.com.android.sample.R;
 import br.com.android.sample.domain.Ponto;
-import br.com.android.sample.domain.util.Comentario;
-import br.com.android.sample.domain.util.Foto;
+import br.com.android.sample.domain.Comentario;
+import br.com.android.sample.domain.Foto;
 import br.com.android.sample.view.autenticacao.ComumActivity;
 
 public class CadastrarPontoActivity extends ComumActivity implements DatabaseReference.CompletionListener{
 
-    private double altura;
-    private double altitude;
-    private double latitude;
-    private double longitude;
-    private String caminhoFoto;
-    private File file;
+    private double altura, altitude, latitude, longitude;
     private Ponto ponto;
+    private Comentario comentario;
+    private Foto foto;
     private EditText nome;
     private ImageView imagemFoto;
     private EditText coment;
@@ -64,6 +62,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
             Bundle params = intent.getExtras();
             if (params != null){
                 altura = params.getDouble("altura");
+                altitude = params.getDouble("altitude");
                 latitude = params.getDouble("latitude");
                 longitude = params.getDouble("longitude");
             }
@@ -75,26 +74,31 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
     }
 
     protected void initPonto(){
+        UUID uid = UUID.fromString("067e6162-3b6f-4ae2-a171-2470b63dff00");
         ponto = new Ponto();
-        Comentario comentario = new Comentario(nome.getText().toString() + "_comentario_1",
-                coment.getText().toString(), Calendar.getInstance().getTime() );
-        Foto foto = new Foto(nome.getText().toString() + "_foto_1", bitmap, Calendar.getInstance().getTime());
-        ponto.setName( nome.getText().toString() );
+        ponto.setId(uid.randomUUID() + "");
+        ponto.setIdUser(mAuth.getCurrentUser().getUid());
+        ponto.setNome(nome.getText().toString());
         ponto.setData(Calendar.getInstance().getTime());
         ponto.setLatitude(latitude);
         ponto.setLongitude(longitude);
-        ponto.setAltitude(altura);
-        ponto.setListaComentario(nome.getText().toString() + "_comentario_1", comentario);
-        ponto.setListaImagem(nome.getText().toString() + "_foto_1", foto);
+        ponto.setAltura(altura);
+        ponto.setAltitude(altitude);
+
+        comentario = new Comentario(uid.randomUUID() + "", ponto.getIdUser(),
+                coment.getText().toString(), Calendar.getInstance().getTime() );
+
+        ponto.setListaComentario(comentario.getId(), comentario);
+
+        foto = new Foto(uid.randomUUID() + "", ponto.getIdUser(), bitmap, Calendar.getInstance().getTime());
+
+        ponto.setListaImagem(foto.getId(), foto);
     }
 
 
     public void onBotaoFotoClick(View view){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, 0);
-        caminhoFoto = Environment.getExternalStorageState() + "/" + System.currentTimeMillis() + ".jpg";
-        file = new File(caminhoFoto);
-        Uri outputFileUri = Uri.fromFile(file);
     }
 
     @Override
@@ -116,39 +120,30 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         initPonto();
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference pontoRef = database.getReference("Ponto");
+        DatabaseReference pontoRef = database.getReference("pontos");
 
-        pontoRef.child(ponto.getName()).setValue(ponto);
-/*
-        DatabaseReference novaRef = pontoRef.child(nome.getText().toString());
+        pontoRef.child(ponto.getId()).setValue(ponto);
 
-        novaRef.child("altura 1").setValue(altura);
-        novaRef.child("latitude 1").setValue(latitude);
-        novaRef.child("longitude 1").setValue(longitude);
-        novaRef.child("data").setValue(Calendar.getInstance().getTime());
-        novaRef.child("fotos").child(nome.getText().toString() + "_foto_1").child("data").setValue(Calendar.getInstance().getTime());
-        novaRef.child("fotos").child(nome.getText().toString() + "_foto_1").child("user").setValue(mAuth.getCurrentUser().getUid());
-        novaRef.child("Comentarios").child(nome.getText().toString() + "_comentario_1").child("texto").setValue(coment.getText().toString());
-        novaRef.child("Comentarios").child(nome.getText().toString() + "_comentario_1").child("data").setValue(Calendar.getInstance().getTime());
-        novaRef.child("Comentarios").child(nome.getText().toString() + "_comentario_1").child("user").setValue(mAuth.getCurrentUser().getUid());
-*/
+        DatabaseReference novaRef = pontoRef.child(ponto.getId());
+
+        novaRef.child("fotos").child(foto.getId()).child("data").setValue(foto.getData());
+        novaRef.child("fotos").child(foto.getId()).child("idUser").setValue(ponto.getIdUser());
+        novaRef.child("fotos").child(foto.getId()).child("id").setValue(ponto.getId());
+
+        novaRef.child("comentarios").child(comentario.getId()).setValue(comentario);
 
         // Create a storage reference from our app
         StorageReference storageRef = storage.getReferenceFromUrl("gs://projeto-de-graduacao.appspot.com");
 
-        // Create a reference to "mountains.jpg"
-        StorageReference mountainsRef = storageRef.child(nome.getText().toString() + "_foto_1");
-
         // Create a reference to 'images/mountains.jpg'
-        StorageReference mountainImagesRef = storageRef.child("images/" + nome.getText().toString() + "_foto_1");
+        StorageReference fotoRef = storageRef.child("fotos/" + ponto.getId()+ "/"  + foto.getId());
 
-        InputStream stream;
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 0, bos);
         byte[] bitmapdata = bos.toByteArray();
         ByteArrayInputStream bs = new ByteArrayInputStream(bitmapdata);
         UploadTask uploadTask;
-        uploadTask = mountainsRef.putStream(bs);
+        uploadTask = fotoRef.putStream(bs);
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception exception) {

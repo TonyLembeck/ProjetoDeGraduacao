@@ -1,19 +1,8 @@
 package br.com.android.sample.domain;
 
-import android.graphics.Bitmap;
-import android.media.Image;
-
-import com.google.firebase.database.DatabaseReference;
-
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
-import br.com.android.sample.domain.util.Comentario;
-import br.com.android.sample.domain.util.Foto;
-import br.com.android.sample.domain.util.LibraryClass;
 
 /**
  * Created by tony on 06/10/16.
@@ -22,11 +11,13 @@ public class Ponto {
     public static String PROVIDER = "br.com.thiengo.thiengocalopsitafbexample.domain.Ponto.PROVIDER";
 
     private String id;
-    private String name;
+    private String idUser;
+    private String nome;
     private Date data;
     private double latitude;
     private double longitude;
     private double altitude;
+    private double altura;
     private Map<String, Comentario> listaComentario = new HashMap<String, Comentario>();
     private Map<String, Foto> listaImagem = new HashMap<String, Foto>();
 
@@ -41,12 +32,20 @@ public class Ponto {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getIdUser() {
+        return idUser;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public Date getData() {
@@ -77,24 +76,32 @@ public class Ponto {
         return altitude;
     }
 
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
     public void setAltitude(double altitude) {
         this.altitude = altitude;
     }
 
-    public Comentario getListaComentario(String nome) {
-        return listaComentario.get(nome);
+    public Comentario getListaComentario(String id) {
+        return listaComentario.get(id);
     }
 
-    public void setListaComentario(String nome, Comentario comentario) {
-        listaComentario.put(nome, comentario);
+    public void setListaComentario(String id, Comentario comentario) {
+        listaComentario.put(id, comentario);
     }
 
-    public Foto getListaImagem(String nome) {
-        return listaImagem.get(nome);
+    public Foto getListaImagem(String id) {
+        return listaImagem.get(id);
     }
 
-    public void setListaImagem(String nome, Foto foto) {
-        listaImagem.put(nome, foto);
+    public void setListaImagem(String id, Foto foto) {
+        listaImagem.put(id, foto);
     }
 
 }

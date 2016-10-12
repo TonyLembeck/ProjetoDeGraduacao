@@ -13,12 +13,12 @@ public class Calcular {
         return Math.tan((Math.PI /180 ) * eixoZ) * altura;
     }
 
-    public static double altura(double alturaUsuario, double distancia, double eixoZ, double eixoXAccel) {
+    public static double altura(double alturaUsuario, double distancia, double eixoZ, double eixoX) {
 
-        if (eixoXAccel > 0) {
+        if (eixoX > 0) {
             return alturaUsuario - (Math.tan((Math.PI /180 ) * (90 - eixoZ)) * distancia);
         } else
-            return (Math.tan((Math.PI /180 ) * eixoZ) * distancia) + alturaUsuario;
+            return (Math.tan((Math.PI /180 ) * (90 - eixoZ)) * distancia) + alturaUsuario;
     }
 
     public static double latitude(double distancia, double eixoY, double latitude) {

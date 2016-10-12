@@ -97,6 +97,7 @@
         <activity
             android:name="br.com.android.sample.view.cadastrar.CadastrarPontoActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="br.com.android.sample.view.ar.PontoARActivity" />
         <!--
              IMPORTANT: The following activities have to be added to each project 
 			which imports the DroidAR Library

@@ -177,12 +177,14 @@
     <orderEntry type="library" exported="" name="support-fragment-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="ormlite-api-4.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-base-9.4.0" level="project" />
+    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="library" exported="" name="play-services-clearcut-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-database-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wearable-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-drive-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-common-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-storage-9.4.0" level="project" />
+    <orderEntry type="library" exported="" name="beyondar-v0.9.3" level="project" />
     <orderEntry type="library" exported="" name="firebase-iid-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-vision-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wallet-9.4.0" level="project" />
@@ -212,6 +214,7 @@
     <orderEntry type="library" exported="" name="play-services-appinvite-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-fitness-9.4.0" level="project" />
+    <orderEntry type="library" exported="" name="beyondar-googlemap-plugin-v0.9.0" level="project" />
     <orderEntry type="library" exported="" name="ormlite-android-5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-nearby-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-9.4.0" level="project" />
@@ -234,6 +237,7 @@
     <orderEntry type="library" exported="" name="support-vector-drawable-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-9.4.0" level="project" />
+    <orderEntry type="library" exported="" name="beyondar-radar-plugin-v0.9.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="firebase-crash-9.4.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-safetynet-9.4.0" level="project" />
