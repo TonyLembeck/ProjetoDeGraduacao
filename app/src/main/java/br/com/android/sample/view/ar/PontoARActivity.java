@@ -2,6 +2,7 @@ package br.com.android.sample.view.ar;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
@@ -9,7 +10,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.SeekBar;
@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import br.com.android.sample.R;
+import br.com.android.sample.view.cadastrar.VisualizaPontoActivity;
 
 public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekBarChangeListener,
         OnClickBeyondarObjectListener {
@@ -152,8 +153,11 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
     @Override
     public void onClickBeyondarObject(ArrayList<BeyondarObject> beyondarObjects) {
         if (beyondarObjects.size() > 0) {
-            Toast.makeText(this, "Clicked on: " + beyondarObjects.get(0).getName(),
+            Toast.makeText(this, "Clicked on: " + CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId(),
                     Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, VisualizaPontoActivity.class);
+            intent.putExtra("idPonto", CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId());
+            startActivity(intent);
         }
     }
 

@@ -79,7 +79,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         ponto.setId(uid.randomUUID() + "");
         ponto.setIdUser(mAuth.getCurrentUser().getUid());
         ponto.setNome(nome.getText().toString());
-        ponto.setData(Calendar.getInstance().getTime());
+        ponto.setData(Calendar.getInstance());
         ponto.setLatitude(latitude);
         ponto.setLongitude(longitude);
         ponto.setAltura(altura);

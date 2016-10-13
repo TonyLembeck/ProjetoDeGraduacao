@@ -1,8 +1,20 @@
 package br.com.android.sample.domain;
 
+import com.beyondar.android.world.GeoObject;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import br.com.android.sample.R;
+import br.com.android.sample.domain.util.LibraryClass;
 
 /**
  * Created by tony on 06/10/16.
@@ -13,13 +25,15 @@ public class Ponto {
     private String id;
     private String idUser;
     private String nome;
-    private Date data;
+    private Calendar data;
     private double latitude;
     private double longitude;
     private double altitude;
     private double altura;
     private Map<String, Comentario> listaComentario = new HashMap<String, Comentario>();
     private Map<String, Foto> listaImagem = new HashMap<String, Foto>();
+    private static ArrayList<Ponto> pontos = new ArrayList<>();
+    private static DatabaseReference firebaseRef;
 
     public Ponto() {
     }
@@ -48,11 +62,11 @@ public class Ponto {
         this.nome = name;
     }
 
-    public Date getData() {
+    public Calendar getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(Calendar data) {
         this.data = data;
     }
 
@@ -103,5 +117,49 @@ public class Ponto {
     public void setListaImagem(String id, Foto foto) {
         listaImagem.put(id, foto);
     }
+
+    public static ArrayList<Ponto> getPontos(){
+
+        firebaseRef = LibraryClass.getFirebase();
+        firebaseRef = firebaseRef.child("pontos");
+
+
+        firebaseRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String ref = dataSnapshot.getKey();
+                DatabaseReference novaRef;
+                novaRef = firebaseRef.child(ref);
+
+
+                novaRef.addValueEventListener(new ValueEventListener() {
+
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        Ponto ponto = dataSnapshot.getValue(Ponto.class);
+                        pontos.add(ponto);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }
+
+            @Override public void onChildChanged(DataSnapshot dataSnapshot, String s) {}
+            @Override public void onChildRemoved(DataSnapshot dataSnapshot) {}
+            @Override public void onChildMoved(DataSnapshot dataSnapshot, String s) {}
+            @Override public void onCancelled(DatabaseError databaseError) {}
+
+        });
+
+
+
+        return pontos;
+    }
+
+
 
 }

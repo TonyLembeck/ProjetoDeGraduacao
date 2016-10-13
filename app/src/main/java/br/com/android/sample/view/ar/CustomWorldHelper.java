@@ -27,6 +27,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 import br.com.android.sample.R;
 import br.com.android.sample.domain.Ponto;
 import br.com.android.sample.domain.util.LibraryClass;
@@ -35,6 +37,7 @@ import br.com.android.sample.domain.util.LibraryClass;
 @SuppressLint("SdCardPath")
 public class CustomWorldHelper {
 	public static final int LIST_TYPE_EXAMPLE_1 = 1;
+	protected static ArrayList<Ponto> pontos = new ArrayList<>();
 
 	public static World sharedWorld;
 	private static DatabaseReference firebaseRef;
@@ -54,6 +57,14 @@ public class CustomWorldHelper {
 		// API)
 		sharedWorld.setGeoPosition(latitude, longitude);
 
+		/*ArrayList<Ponto> pontos = Ponto.getPontos();
+		for(int i = 0; i<pontos.size(); i++){
+
+
+		}*/
+
+
+
 		firebaseRef = LibraryClass.getFirebase();
 		firebaseRef = firebaseRef.child("pontos");
 
@@ -72,11 +83,12 @@ public class CustomWorldHelper {
 					public void onDataChange(DataSnapshot dataSnapshot) {
 
 						Ponto ponto = dataSnapshot.getValue(Ponto.class);
-
-						GeoObject go = new GeoObject(l++);
+						pontos.add(ponto);
+						GeoObject go = new GeoObject(l);
 						go.setGeoPosition(ponto.getLatitude(), ponto.getLongitude());
 						go.setImageResource(R.drawable.logocponto);
 						go.setName(ponto.getNome());
+						l++;
 						sharedWorld.addBeyondarObject(go);
 					}
 
@@ -119,5 +131,12 @@ public class CustomWorldHelper {
 		sharedWorld.addBeyondarObject(go3);
 */
 		return sharedWorld;
+	}
+
+	public static Ponto getPonto(long id){
+
+		int indice = (int) id;
+
+		return pontos.get(indice);
 	}
 }
