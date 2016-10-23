@@ -19,9 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"
             android:layout_margin="@dimen/fab_margin"
-            android:src="@mipmap/ic_add_white_48dp"
+            android:src="@mipmap/ic_camera_branco"
             app:backgroundTint="@color/colorPrimaryDark"
-            android:onClick="onFabClick"/>
+            android:onClick="onCalcularClick"/>
 
         <include layout="@layout/content_medicao" />
 
@@ -48,34 +48,9 @@
         android:id="@+id/cadastrar_ponto"
         android:layout_gravity="bottom|right"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_menu_save"
+        android:src="@mipmap/ic_save_azul"
         android:background="@android:color/transparent"
         android:onClick="onCadPontoClick"/>
-
-    <LinearLayout
-        android:id="@+id/botoes_camera_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|top"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
-            android:layout_margin="@dimen/fab_margin"
-            android:src="@mipmap/ic_camera_azul"
-            android:background="@android:color/transparent"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/menu"
-            android:layout_gravity="right|top"
-            android:layout_margin="@dimen/fab_margin"
-            android:src="@mipmap/menu"
-            android:background="@android:color/transparent"
-            android:onClick="onMenuClick"/>
-    </LinearLayout>
 
 
 
@@ -86,7 +61,8 @@
         android:layout_gravity="bottom|left"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_margin="@dimen/fab_margin">
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="onInserirValoresManualmenteClick">
 
 
         <TextView
@@ -106,7 +82,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/altura"
+            android:text="@string/altitude"
             android:id="@+id/altura"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/colorPrimaryDark"/>

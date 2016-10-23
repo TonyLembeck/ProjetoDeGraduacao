@@ -17,8 +17,14 @@ package br.com.android.sample.view.ar;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
 
 
+import com.beyondar.android.util.ImageUtils;
+import com.beyondar.android.world.BeyondarObject;
+import com.beyondar.android.world.BeyondarObjectList;
 import com.beyondar.android.world.GeoObject;
 import com.beyondar.android.world.World;
 import com.google.firebase.database.ChildEventListener;
@@ -27,6 +33,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import br.com.android.sample.R;
@@ -35,10 +42,10 @@ import br.com.android.sample.domain.util.LibraryClass;
 
 
 @SuppressLint("SdCardPath")
-public class CustomWorldHelper {
+public class CustomWorldHelper extends AppCompatActivity{
 	public static final int LIST_TYPE_EXAMPLE_1 = 1;
 	protected static ArrayList<Ponto> pontos = new ArrayList<>();
-
+	private static final String TMP_IMAGE_PREFIX = "viewImage_";
 	public static World sharedWorld;
 	private static DatabaseReference firebaseRef;
 	private static long l = 0;
@@ -51,19 +58,11 @@ public class CustomWorldHelper {
 
 		// The user can set the default bitmap. This is useful if you are
 		// loading images form Internet and the connection get lost
-		sharedWorld.setDefaultImage(R.drawable.beyondar_default_unknow_icon);
+		sharedWorld.setDefaultImage(R.mipmap.logo_fundo_azul);
 
 		// User position (you can change it using the GPS listeners form Android
 		// API)
 		sharedWorld.setGeoPosition(latitude, longitude);
-
-		/*ArrayList<Ponto> pontos = Ponto.getPontos();
-		for(int i = 0; i<pontos.size(); i++){
-
-
-		}*/
-
-
 
 		firebaseRef = LibraryClass.getFirebase();
 		firebaseRef = firebaseRef.child("pontos");
@@ -76,7 +75,6 @@ public class CustomWorldHelper {
 				DatabaseReference novaRef;
 				novaRef = firebaseRef.child(ref);
 
-
 				novaRef.addValueEventListener(new ValueEventListener() {
 
 					@Override
@@ -85,8 +83,9 @@ public class CustomWorldHelper {
 						Ponto ponto = dataSnapshot.getValue(Ponto.class);
 						pontos.add(ponto);
 						GeoObject go = new GeoObject(l);
+						go.setDistanceFromUser(2);
 						go.setGeoPosition(ponto.getLatitude(), ponto.getLongitude());
-						go.setImageResource(R.drawable.logocponto);
+						//go.setImageResource(R.mipmap.logo_fundo_azul);
 						go.setName(ponto.getNome());
 						l++;
 						sharedWorld.addBeyondarObject(go);
@@ -97,6 +96,10 @@ public class CustomWorldHelper {
 
 					}
 				});
+
+
+
+
 			}
 
 			@Override public void onChildChanged(DataSnapshot dataSnapshot, String s) {}
@@ -106,30 +109,6 @@ public class CustomWorldHelper {
 
 		});
 
-		/*
-		// Create an object with an image in the app resources.
-		GeoObject go1 = new GeoObject(1l);
-		go1.setGeoPosition(41.90523339794433d, 2.565036406654116d);
-		go1.setImageResource(R.drawable.creature_1);
-		go1.setName("Creature 1");
-
-		// Is it also possible to load the image asynchronously form internet
-		GeoObject go2 = new GeoObject(2l);
-		go2.setGeoPosition(41.90518966360719d, 2.56582424468222d);
-		go2.setImageUri("http://beyondar.github.io/beyondar/images/logo_512.png");
-		go2.setName("Online image");
-
-		// Also possible to get images from the SDcard
-		GeoObject go3 = new GeoObject(3l);
-		go3.setGeoPosition(41.90550959641445d, 2.565873388087619d);
-		go3.setImageUri("/sdcard/someImageInYourSDcard.jpeg");
-		go3.setName("IronMan from sdcard");
-
-		// Add the GeoObjects to the world
-		sharedWorld.addBeyondarObject(go1);
-		sharedWorld.addBeyondarObject(go2, LIST_TYPE_EXAMPLE_1);
-		sharedWorld.addBeyondarObject(go3);
-*/
 		return sharedWorld;
 	}
 

@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="branco">#FFFFFF</color>
+    <color name="predo">#000000</color>
     <color name="azul">#280ef0</color>
 </resources>

@@ -30,6 +30,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.UUID;
 
 import br.com.android.sample.R;
@@ -79,18 +80,18 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         ponto.setId(uid.randomUUID() + "");
         ponto.setIdUser(mAuth.getCurrentUser().getUid());
         ponto.setNome(nome.getText().toString());
-        ponto.setData(Calendar.getInstance());
+        ponto.setData(new Date());
         ponto.setLatitude(latitude);
         ponto.setLongitude(longitude);
         ponto.setAltura(altura);
         ponto.setAltitude(altitude);
 
         comentario = new Comentario(uid.randomUUID() + "", ponto.getIdUser(),
-                coment.getText().toString(), Calendar.getInstance().getTime() );
+                coment.getText().toString(), ponto.getData() );
 
         ponto.setListaComentario(comentario.getId(), comentario);
 
-        foto = new Foto(uid.randomUUID() + "", ponto.getIdUser(), bitmap, Calendar.getInstance().getTime());
+        foto = new Foto(uid.randomUUID() + "", ponto.getIdUser(), bitmap, ponto.getData());
 
         ponto.setListaImagem(foto.getId(), foto);
     }
@@ -153,7 +154,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                //Uri downloadUrl = taskSnapshot.getDownloadUrl();
             }
         });
 
@@ -168,7 +169,6 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
     }
 
 
-    @Override
     protected void initViews() {
 
         nome = (EditText) findViewById(R.id.nome_ponto);
@@ -176,8 +176,4 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         coment = (EditText) findViewById(R.id.comentario);
     }
 
-    @Override
-    protected void initUser() {
-
-    }
 }

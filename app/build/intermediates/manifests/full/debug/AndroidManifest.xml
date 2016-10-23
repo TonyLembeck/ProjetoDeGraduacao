@@ -55,7 +55,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logocponto"
+        android:icon="@mipmap/logo_fundo_azul"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar" >
@@ -89,7 +89,7 @@
 
         <activity
             android:name="br.com.android.sample.view.mapa.MapsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="br.com.android.sample.view.cadastrar.MedicaoActivity"
             android:screenOrientation="landscape"
@@ -99,6 +99,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="br.com.android.sample.view.ar.PontoARActivity" />
         <activity android:name="br.com.android.sample.view.cadastrar.VisualizaPontoActivity" />
+        <activity android:name="br.com.android.sample.view.cadastrar.FotoViewActivity" />
         <!--
              IMPORTANT: The following activities have to be added to each project 
 			which imports the DroidAR Library

@@ -18,7 +18,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logocponto"
+        android:icon="@mipmap/logo_fundo_azul"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
@@ -52,16 +52,25 @@
 
         <activity
             android:name=".view.mapa.MapsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
+
         <activity
             android:name=".view.cadastrar.MedicaoActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".view.cadastrar.CadastrarPontoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".view.ar.PontoARActivity" />
-        <activity android:name=".view.cadastrar.VisualizaPontoActivity"></activity>
+
+        <activity
+            android:name=".view.ar.PontoARActivity" />
+
+        <activity
+            android:name=".view.cadastrar.VisualizaPontoActivity" />
+
+        <activity
+            android:name=".view.cadastrar.FotoViewActivity"></activity>
     </application>
 
 </manifest>

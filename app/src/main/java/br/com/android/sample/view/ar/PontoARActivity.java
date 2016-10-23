@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.beyondar.android.fragment.BeyondarFragmentSupport;
 import com.beyondar.android.plugin.radar.RadarView;
@@ -23,12 +22,21 @@ import com.beyondar.android.util.ImageUtils;
 import com.beyondar.android.view.OnClickBeyondarObjectListener;
 import com.beyondar.android.world.BeyondarObject;
 import com.beyondar.android.world.BeyondarObjectList;
+import com.beyondar.android.world.GeoObject;
 import com.beyondar.android.world.World;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import br.com.android.sample.R;
+import br.com.android.sample.domain.Ponto;
+import br.com.android.sample.domain.util.LibraryClass;
 import br.com.android.sample.view.cadastrar.VisualizaPontoActivity;
 
 public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekBarChangeListener,
@@ -41,6 +49,9 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
     private Location location;
     private LocationManager locationManager;
     private static final String TMP_IMAGE_PREFIX = "viewImage_";
+    private static DatabaseReference firebaseRef;
+    protected static ArrayList<Ponto> pontos = new ArrayList<>();
+    private static long l = 0;
 
     private SeekBar mSeekBarPushAwayDistance;
     private TextView mMinFarText;
@@ -52,6 +63,11 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
 
         // Hide the window title.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        // The first thing that we do is to remove all the generated temporal
+        // images. Remember that the application needs external storage write
+        // permission.
+        cleanTempFolder();
 
         setContentView(R.layout.activity_ponto_ar);
 
@@ -65,6 +81,59 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         }
+
+        mWorld = new World(this);
+
+        // The user can set the default bitmap. This is useful if you are
+        // loading images form Internet and the connection get lost
+        mWorld.setDefaultImage(R.mipmap.logo_fundo_azul);
+
+        // User position (you can change it using the GPS listeners form Android
+        // API)
+        mWorld.setGeoPosition(location.getLatitude(), location.getLongitude());
+
+        firebaseRef = LibraryClass.getFirebase();
+        firebaseRef = firebaseRef.child("pontos");
+
+
+        firebaseRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String ref = dataSnapshot.getKey();
+                DatabaseReference novaRef;
+                novaRef = firebaseRef.child(ref);
+
+                novaRef.addValueEventListener(new ValueEventListener() {
+
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        Ponto ponto = dataSnapshot.getValue(Ponto.class);
+                        pontos.add(ponto);
+                        GeoObject go = new GeoObject(l);
+                        go.setGeoPosition(ponto.getLatitude(), ponto.getLongitude());
+                        //go.setImageResource(R.mipmap.logo_fundo_azul);
+                        go.setName(ponto.getNome());
+                        l++;
+                        mWorld.addBeyondarObject(go);
+                        replaceImagesByStaticViews(mWorld);
+
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }
+
+            @Override public void onChildChanged(DataSnapshot dataSnapshot, String s) {}
+            @Override public void onChildRemoved(DataSnapshot dataSnapshot) {}
+            @Override public void onChildMoved(DataSnapshot dataSnapshot, String s) {}
+            @Override public void onCancelled(DatabaseError databaseError) {}
+
+        });
+
 
         // set listener for the geoObjects
         mBeyondarFragment.setOnClickBeyondarObjectListener(this);
@@ -86,7 +155,6 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
         mRadarPlugin.setListDotRadius(CustomWorldHelper.LIST_TYPE_EXAMPLE_1, 3);
 
         // We create the world and fill it ...
-        mWorld = CustomWorldHelper.generateObjects(this, location.getLatitude(), location.getLongitude());
         // .. and send it to the fragment
         mBeyondarFragment.setWorld(mWorld);
 
@@ -99,12 +167,9 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
         mSeekBarPushAwayDistance.setOnSeekBarChangeListener(this);
         mSeekBarPushAwayDistance.setMax(200);
         mSeekBarPushAwayDistance.setProgress(100);
-
-        replaceImagesByStaticViews(mWorld);
-
     }
 
-    private void replaceImagesByStaticViews(World world) {
+    public void replaceImagesByStaticViews(World world) {
         String path = getTmpPath();
 
         for (BeyondarObjectList beyondarList : world.getBeyondarObjectLists()) {
@@ -112,7 +177,7 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
                 // First let's get the view, inflate it and change some stuff
                 View view = getLayoutInflater().inflate(R.layout.static_beyondar_object_view, null);
                 TextView textView = (TextView) view.findViewById(R.id.geoObjectName);
-                textView.setText(beyondarObject.getName());
+                textView.setText("  " + beyondarObject.getName() + "  \n");
                 try {
                     // Now that we have it we need to store this view in the
                     // storage in order to allow the framework to load it when
@@ -139,13 +204,26 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
         return getExternalFilesDir(null).getAbsoluteFile() + "/tmp/";
     }
 
+    /** Clean all the generated files */
+    private void cleanTempFolder() {
+        File tmpFolder = new File(getTmpPath());
+        if (tmpFolder.isDirectory()) {
+            String[] children = tmpFolder.list();
+            for (int i = 0; i < children.length; i++) {
+                if (children[i].startsWith(TMP_IMAGE_PREFIX)) {
+                    new File(tmpFolder, children[i]).delete();
+                }
+            }
+        }
+    }
+
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         if (mRadarPlugin == null)
             return;
         if (seekBar == mSeekBarPushAwayDistance) {
             mBeyondarFragment.setPushAwayDistance(progress);
-            mMinFarText.setText("Push away: "  + progress);
+            mMinFarText.setText("Distância: "  + progress);
 
         }
     }
@@ -153,10 +231,10 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
     @Override
     public void onClickBeyondarObject(ArrayList<BeyondarObject> beyondarObjects) {
         if (beyondarObjects.size() > 0) {
-            Toast.makeText(this, "Clicked on: " + CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId(),
-                    Toast.LENGTH_LONG).show();
+            /*Toast.makeText(this, "Clicked on: " + CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId(),
+                    Toast.LENGTH_LONG).show();*/
             Intent intent = new Intent(this, VisualizaPontoActivity.class);
-            intent.putExtra("idPonto", CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId());
+            intent.putExtra("idPonto", pontos.get((int)beyondarObjects.get(0).getId()).getId());
             startActivity(intent);
         }
     }

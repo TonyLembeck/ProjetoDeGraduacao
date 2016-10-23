@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textSize="50dp"
         android:textColor="@color/branco"
-        android:background="@color/colorPrimaryDark"
+        android:background="@mipmap/seta_baixo_ra"
         />
 
 </LinearLayout>

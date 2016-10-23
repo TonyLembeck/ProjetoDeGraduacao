@@ -42,7 +42,7 @@
         android:id="@+id/ar"
         android:layout_gravity="top|left"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_menu_view"
+        android:src="@mipmap/ic_visao_azul"
         android:background="@android:color/transparent"
         android:backgroundTint="#0911f3"
         android:onClick="onARClick"/>
