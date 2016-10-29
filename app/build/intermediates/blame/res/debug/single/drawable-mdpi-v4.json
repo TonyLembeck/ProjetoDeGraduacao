@@ -92,12 +92,12 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable-mdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png"
     },
     {
-        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_forward_30_white_24.png",
-        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable-mdpi-v4/quantum_ic_forward_30_white_24.png"
-    },
-    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_pause_circle_filled_grey600_36.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable-mdpi-v4/quantum_ic_pause_circle_filled_grey600_36.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_forward_30_white_24.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable-mdpi-v4/quantum_ic_forward_30_white_24.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png",

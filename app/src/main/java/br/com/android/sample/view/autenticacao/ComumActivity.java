@@ -16,10 +16,7 @@ abstract public class ComumActivity extends AppCompatActivity {
     protected EditText senha;
 
     protected void showSnackbar(String message ){
-        Snackbar.make(progressBar,
-                message,
-                Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
+        Snackbar.make(progressBar, message, Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 
     protected void showToast( String message ){

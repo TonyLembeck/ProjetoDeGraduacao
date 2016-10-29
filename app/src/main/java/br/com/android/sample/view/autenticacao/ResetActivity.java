@@ -1,11 +1,10 @@
 package br.com.android.sample.view.autenticacao;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -13,21 +12,19 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.crash.FirebaseCrash;
 
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.EActivity;
-
 import br.com.android.sample.R;
 
-@EActivity(R.layout.activity_reset)
-public class ResetActivity extends AppCompatActivity {
+public class ResetActivity extends ComumActivity {
 
     private Toolbar toolbar;
     private AutoCompleteTextView email;
     private FirebaseAuth firebaseAuth;
 
 
-    @AfterViews
-    public void onAfterViews() {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reset);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -53,18 +50,10 @@ public class ResetActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Void> task) {
                     if( task.isSuccessful() ){
                         email.setText("");
-                        Toast.makeText(
-                            ResetActivity.this,
-                            "Recuperação de acesso iniciada. Email enviado.",
-                            Toast.LENGTH_SHORT
-                        ).show();
+                        showSnackbar(ResetActivity.this.getString(R.string.recuperacao_acesso));
                     }
                     else{
-                        Toast.makeText(
-                            ResetActivity.this,
-                            "Falhou! Tente novamente",
-                            Toast.LENGTH_SHORT
-                        ).show();
+                        showSnackbar(ResetActivity.this.getString(R.string.tente_novamente));
                     }
                 }
             })

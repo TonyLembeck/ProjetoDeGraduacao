@@ -8,12 +8,24 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/seta_baixo_ra.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/camera_azul.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/camera_azul.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/marcacao_centro_camera.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/marcacao_centro_camera.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/logo_fundo_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/logo_fundo_branco.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_save_azul.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/ic_save_azul.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/fundo_azul_comentario.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/fundo_azul_comentario.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
@@ -22,6 +34,10 @@
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/menu.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/menu.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/marcador_mais_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-hdpi/marcador_mais_branco.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/logotelainicial.png",

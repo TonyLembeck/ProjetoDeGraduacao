@@ -23,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".view.autenticacao.LoginActivity_"
+            android:name=".view.autenticacao.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -33,18 +33,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.autenticacao.CadastrarUsuarioActivity_"
+            android:name=".view.autenticacao.CadastrarUsuarioActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.autenticacao.ResetActivity_"
+            android:name=".view.autenticacao.ResetActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.autenticacao.UpdateActivity_"
+            android:name=".view.autenticacao.UpdateActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".view.home.HomeActivity_"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -67,10 +63,10 @@
             android:name=".view.ar.PontoARActivity" />
 
         <activity
-            android:name=".view.cadastrar.VisualizaPontoActivity" />
+            android:name=".view.cadastrar.VisualizaComentarioActivity" />
 
         <activity
-            android:name=".view.cadastrar.FotoViewActivity"></activity>
+            android:name=".view.cadastrar.VisualizaFotoActivity"></activity>
     </application>
 
 </manifest>

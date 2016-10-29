@@ -2,6 +2,7 @@ package br.com.android.sample.view.ar;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -10,6 +11,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
 import android.widget.SeekBar;
@@ -37,7 +39,7 @@ import java.util.ArrayList;
 import br.com.android.sample.R;
 import br.com.android.sample.domain.Ponto;
 import br.com.android.sample.domain.util.LibraryClass;
-import br.com.android.sample.view.cadastrar.VisualizaPontoActivity;
+import br.com.android.sample.view.cadastrar.VisualizaComentarioActivity;
 
 public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekBarChangeListener,
         OnClickBeyondarObjectListener {
@@ -52,6 +54,7 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
     private static DatabaseReference firebaseRef;
     protected static ArrayList<Ponto> pontos = new ArrayList<>();
     private static long l = 0;
+    public static final int LIST_TYPE_EXAMPLE_1 = 1;
 
     private SeekBar mSeekBarPushAwayDistance;
     private TextView mMinFarText;
@@ -90,7 +93,17 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
 
         // User position (you can change it using the GPS listeners form Android
         // API)
-        mWorld.setGeoPosition(location.getLatitude(), location.getLongitude());
+
+        if (location == null){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage(this.getString(R.string.gps_nao_responde));
+            builder.setNeutralButton(this.getString(R.string.ok), new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface arg0, int arg1) {
+                }
+            });
+            builder.show();
+        }else
+            mWorld.setGeoPosition(location.getLatitude(), location.getLongitude());
 
         firebaseRef = LibraryClass.getFirebase();
         firebaseRef = firebaseRef.child("pontos");
@@ -150,9 +163,9 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
         mRadarPlugin.setMaxDistance(200);
 
         // We can customize the color of the items
-        mRadarPlugin.setListColor(CustomWorldHelper.LIST_TYPE_EXAMPLE_1, Color.RED);
+        mRadarPlugin.setListColor(LIST_TYPE_EXAMPLE_1, Color.RED);
         // and also the size
-        mRadarPlugin.setListDotRadius(CustomWorldHelper.LIST_TYPE_EXAMPLE_1, 3);
+        mRadarPlugin.setListDotRadius(LIST_TYPE_EXAMPLE_1, 3);
 
         // We create the world and fill it ...
         // .. and send it to the fragment
@@ -223,7 +236,7 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
             return;
         if (seekBar == mSeekBarPushAwayDistance) {
             mBeyondarFragment.setPushAwayDistance(progress);
-            mMinFarText.setText("Distância: "  + progress);
+            mMinFarText.setText(this.getString(R.string.distancia) + " " + progress);
 
         }
     }
@@ -231,10 +244,10 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
     @Override
     public void onClickBeyondarObject(ArrayList<BeyondarObject> beyondarObjects) {
         if (beyondarObjects.size() > 0) {
-            /*Toast.makeText(this, "Clicked on: " + CustomWorldHelper.getPonto(beyondarObjects.get(0).getId()).getId(),
-                    Toast.LENGTH_LONG).show();*/
-            Intent intent = new Intent(this, VisualizaPontoActivity.class);
+            Intent intent = new Intent(this, VisualizaComentarioActivity.class);
             intent.putExtra("idPonto", pontos.get((int)beyondarObjects.get(0).getId()).getId());
+            intent.putExtra("nome", pontos.get((int)beyondarObjects.get(0).getId()).getNome());
+
             startActivity(intent);
         }
     }

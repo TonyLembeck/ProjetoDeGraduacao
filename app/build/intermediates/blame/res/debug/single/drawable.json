@@ -48,6 +48,10 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_text_cursor_material.xml"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/vestrada1024x683.jpg",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/vestrada1024x683.jpg"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mapdotblue.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/ProjetoDeGraduacao/droidar/unspecified/res/drawable/mapdotblue.png"
     },
@@ -370,6 +374,10 @@
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_play.xml",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_play.xml"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/estrada1024x683.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/drawable/estrada1024x683.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/logo_fundo_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/logo_fundo_branco.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_camera_azul.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/ic_camera_azul.png"
     },
@@ -24,6 +28,10 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/marcacao_centro_camera.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/camera_azul.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/camera_azul.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
@@ -40,6 +48,10 @@
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/ic_save_azul.png"
     },
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/fundo_azul_comentario.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/fundo_azul_comentario.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/marcador_mais.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/marcador_mais.png"
     },
@@ -50,5 +62,9 @@
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/logocponto.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/logocponto.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/marcador_mais_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-mdpi/marcador_mais_branco.png"
     }
 ]

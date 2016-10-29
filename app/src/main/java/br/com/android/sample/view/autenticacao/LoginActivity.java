@@ -1,6 +1,7 @@
 package br.com.android.sample.view.autenticacao;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
@@ -24,14 +25,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.crash.FirebaseCrash;
 
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.EActivity;
 
 import br.com.android.sample.R;
 import br.com.android.sample.domain.User;
 import br.com.android.sample.view.mapa.MapsActivity;
 
-@EActivity(R.layout.activity_login)
 public class LoginActivity extends ComumActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private static final int RC_SIGN_IN_GOOGLE = 7859;
@@ -43,11 +41,10 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
     private User user;
     private GoogleApiClient mGoogleApiClient;
 
-
-
-    @AfterViews
-    public void onAfterViews()
-    {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
         // GOOGLE SIGN IN
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken("485605244921-6ti967af6cbmar1hfrteuebcs0n5ans5.apps.googleusercontent.com")
@@ -77,7 +74,7 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
             GoogleSignInAccount account = googleSignInResult.getSignInAccount();
 
             if( account == null ){
-                showSnackbar("Google login falhou, tente novamente");
+                showSnackbar(this.getString(R.string.google_login_falhou));
                 return;
             }
 
@@ -124,7 +121,7 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if( !task.isSuccessful() ){
-                            showSnackbar("Login social falhou");
+                            showSnackbar(LoginActivity.this.getString(R.string.login_falhou));
                         }
                     }
                 })
@@ -187,12 +184,12 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
     }
 
     public void callSignUp(View view){
-        Intent intent = new Intent( this, CadastrarUsuarioActivity_.class );
+        Intent intent = new Intent( this, CadastrarUsuarioActivity.class );
         startActivity(intent);
     }
 
     public void callReset(View view){
-        Intent intent = new Intent( this, ResetActivity_.class );
+        Intent intent = new Intent( this, ResetActivity.class );
         startActivity(intent);
     }
 
@@ -243,7 +240,7 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if( !task.isSuccessful() ){
-                    showSnackbar("Login falhou");
+                    showSnackbar(LoginActivity.this.getString(R.string.login_falhou));
                     return;
                 }
             }

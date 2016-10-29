@@ -2,32 +2,57 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="xhdpi"
+    density="xxhdpi"
     format="7"
-    timestamp="110801034304150"
+    timestamp="74245174393879"
     token="-8010338751598972624" >
 
     <task
         name="javac"
-        duration="4937" />
+        duration="546" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2420" />
+        duration="0" />
     <task
         name="verifier"
-        duration="164" />
+        duration="0" />
 
     <artifact
-        location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="110801034304150" >
+    <build timestamp="73630887261158" >
         <artifact
             location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="74203745858654" >
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="74245174393879" >
+        <artifact
+            location="/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

@@ -26,25 +26,4 @@
 
     <include layout="@layout/content_maps" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addPonto"
-        android:layout_gravity="bottom|center"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@mipmap/marcador_mais"
-        android:background="@android:color/transparent"
-        android:onClick="onAddPontoClick"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ar"
-        android:layout_gravity="top|left"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@mipmap/ic_visao_azul"
-        android:background="@android:color/transparent"
-        android:backgroundTint="#0911f3"
-        android:onClick="onARClick"/>
-
 </android.support.design.widget.CoordinatorLayout>

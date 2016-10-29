@@ -1,10 +1,9 @@
 package br.com.android.sample.view.autenticacao;
 
-import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.crash.FirebaseCrash;
@@ -13,22 +12,20 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.EActivity;
-
 import br.com.android.sample.R;
 import br.com.android.sample.domain.User;
 
-@EActivity(R.layout.activity_update)
-public class UpdateActivity extends AppCompatActivity implements ValueEventListener, DatabaseReference.CompletionListener {
+public class UpdateActivity extends ComumActivity implements ValueEventListener, DatabaseReference.CompletionListener {
 
     private Toolbar toolbar;
     private User user;
     private AutoCompleteTextView name;
 
 
-    @AfterViews
-    public void onAfterViews() {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -71,10 +68,10 @@ public class UpdateActivity extends AppCompatActivity implements ValueEventListe
 
         if( firebaseError != null ){
             FirebaseCrash.report( firebaseError.toException() );
-            Toast.makeText( this, "Falhou: "+firebaseError.getMessage(), Toast.LENGTH_LONG ).show();
+            showSnackbar(this.getString(R.string.atualizacao_falhou));
         }
         else{
-            Toast.makeText( this, "Atualização realizada com sucesso.", Toast.LENGTH_SHORT ).show();
+            showSnackbar(this.getString(R.string.atualizacao_realizada));
         }
     }
 }

@@ -14,21 +14,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import br.com.android.sample.R;
 import br.com.android.sample.domain.Ponto;
 import br.com.android.sample.domain.User;
 import br.com.android.sample.domain.util.LibraryClass;
-import br.com.android.sample.view.ar.CustomWorldHelper;
 import br.com.android.sample.view.ar.PontoARActivity;
 import br.com.android.sample.view.autenticacao.LoginActivity;
-import br.com.android.sample.view.autenticacao.LoginActivity_;
 import br.com.android.sample.view.cadastrar.MedicaoActivity;
-import br.com.android.sample.view.cadastrar.VisualizaPontoActivity;
+import br.com.android.sample.view.cadastrar.VisualizaComentarioActivity;
 
-
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -73,8 +68,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Favor liberar acesso ao GPS do Dispositivo");
-            builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+            builder.setMessage(this.getString(R.string.liberar_acesso_gps));
+            builder.setNeutralButton(this.getString(R.string.ok), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
                     finish();
                 }
@@ -89,8 +84,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void onAddPontoClick(View view){
-        /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-              .setAction("Action", null).show();*/
         Intent intent = new Intent(MapsActivity.this, MedicaoActivity.class);
         intent.putExtra("latitude", latitude);
         intent.putExtra("longitude", longitude);
@@ -104,8 +97,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         if (location == null){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("GPS do dispositivo não está respondendo!");
-            builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+            builder.setMessage(this.getString(R.string.gps_nao_responde));
+            builder.setNeutralButton(this.getString(R.string.ok), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
                 }
             });
@@ -113,8 +106,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }else {
             LatLng latLng;
             latLng = new LatLng(location.getLatitude(), location.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(latLng).title("Minha Localizacao"));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            mMap.setMyLocationEnabled(true);
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13));
 
         }
 
@@ -160,16 +153,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     LatLng latLngTemp;
                     if (location == null){
                         AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
-                        builder.setMessage("GPS do dispositivo não está respondendo!");
-                        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                        builder.setMessage(MapsActivity.this.getString(R.string.gps_nao_responde));
+                        builder.setNeutralButton(MapsActivity.this.getString(R.string.ok), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface arg0, int arg1) {
                             }
                         });
                         builder.show();
                     }else {
                         latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
-                        mMap.addMarker(new MarkerOptions().position(latLngTemp).title("Minha Localizacao"));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngTemp));
+                        mMap.setMyLocationEnabled(true);
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngTemp, 13));
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
                         Ponto ponto = listaPonto.get(i);
@@ -177,7 +170,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         mMap.addMarker(new MarkerOptions().position(latLngTemp).title(ponto.getNome()).zIndex(i+1));
                     }
                 }
-                marker = new MarkerOptions().position(latLng).title("Novo ponto");
+                marker = new MarkerOptions().position(latLng).title(MapsActivity.this.getString(R.string.novo_ponto));
                 mMap.addMarker(marker);
                 latitude = latLng.latitude;
                 longitude = latLng.longitude;
@@ -193,16 +186,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     LatLng latLngTemp;
                     if (location == null){
                         AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
-                        builder.setMessage("GPS do dispositivo não está respondendo!");
-                        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                        builder.setMessage(MapsActivity.this.getString(R.string.gps_nao_responde));
+                        builder.setNeutralButton(MapsActivity.this.getString(R.string.ok), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface arg0, int arg1) {
                             }
                         });
                         builder.show();
                     }else {
                         latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
-                        mMap.addMarker(new MarkerOptions().position(latLngTemp).title("Minha Localizacao"));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngTemp));
+                        mMap.setMyLocationEnabled(true);
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngTemp, 13));
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
                         Ponto ponto = (Ponto) listaPonto.get(i);
@@ -220,8 +213,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public boolean onMarkerClick(Marker marker) {
                 if (marker.getZIndex() > 0) {
-                    Intent intent = new Intent(MapsActivity.this, VisualizaPontoActivity.class);
+                    Intent intent = new Intent(MapsActivity.this, VisualizaComentarioActivity.class);
                     intent.putExtra("idPonto", listaPonto.get((int) marker.getZIndex() - 1).getId());
+                    intent.putExtra("nome", listaPonto.get((int) marker.getZIndex() - 1).getNome());
                     startActivity(intent);
                 }
                 return false;
@@ -252,10 +246,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if(id == R.id.action_logout){
-
+        if(id == R.id.ar){
+            startActivity(new Intent(this, PontoARActivity.class));
+        } else if(id == R.id.addPonto){
+            Intent intent = new Intent(this, MedicaoActivity.class);
+            intent.putExtra("latitude", latitude);
+            intent.putExtra("longitude", longitude);
+            startActivity(intent);
+        } else if(id == R.id.action_logout){
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(this, LoginActivity_.class));
+            startActivity(new Intent(this, LoginActivity.class));
             File cacheDir = getCacheDir();
             deleteDirectory(cacheDir.getParent());
             finish();

@@ -19,11 +19,23 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"
             android:layout_margin="@dimen/fab_margin"
+            android:elevation="6dp"
             android:src="@mipmap/ic_camera_branco"
             app:backgroundTint="@color/colorPrimaryDark"
             android:onClick="onCalcularClick"/>
 
         <include layout="@layout/content_medicao" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cadastrar_ponto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="6dp"
+            android:src="@mipmap/marcador_mais_branco"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="onCadPontoClick"/>
 
     </FrameLayout>
 
@@ -41,17 +53,6 @@
         android:layout_gravity="center"
         android:src="@mipmap/marcacao_centro_camera"
         android:background="@android:color/transparent"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cadastrar_ponto"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@mipmap/ic_save_azul"
-        android:background="@android:color/transparent"
-        android:onClick="onCadPontoClick"/>
-
 
 
     <LinearLayout

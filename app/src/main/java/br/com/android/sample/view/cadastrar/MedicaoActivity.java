@@ -15,20 +15,19 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import br.com.android.sample.R;
 import br.com.android.sample.infrastructure.calcular.Calcular;
+import br.com.android.sample.view.autenticacao.ComumActivity;
 
 
-public class MedicaoActivity extends AppCompatActivity implements SensorEventListener{
+public class MedicaoActivity extends ComumActivity implements SensorEventListener{
 
 
     private Camera camera;
@@ -84,15 +83,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
             tvLatitude.setText(this.getString(R.string.latitude) + " " + latitude);
             tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
         }
-/*
-        // Create an instance of Camera
-        camera = getCameraInstance();
 
-        //setCameraDisplayOrientation(this, 0, camera);
-        cameraPreview = new CameraPreview(this, camera);
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera);
-        preview.addView(cameraPreview);
-*/
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
@@ -103,12 +94,9 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
 
         if (ActivityCompat.checkSelfPermission(MedicaoActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(this, "negado", Toast.LENGTH_LONG);
-
         } else {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            Toast.makeText(this, "autorizado", Toast.LENGTH_LONG);
         }
 
     }
@@ -117,17 +105,17 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
     public void onCalcularClick(View view){
 
         if(alturaUsuario == 0){
-            Toast.makeText(MedicaoActivity.this, "Favor inserir a altura do usuário!", Toast.LENGTH_LONG).show();
+            showToast(this.getString(R.string.inserir_altura_usuario));
         }else if (distancia == 0) {
             distancia = Calcular.distancia(alturaUsuario, eixoZOrien);
-            tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " m");
+            tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
         }else {
-            tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " m");
+            tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
             altura = Calcular.altura(alturaUsuario, distancia, eixoZOrien, eixoZAccel);
             if (location == null){
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage("GPS do dispositivo não está respondendo!");
-                builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                builder.setMessage(this.getString(R.string.gps_nao_responde));
+                builder.setNeutralButton(this.getString(R.string.ok), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface arg0, int arg1) {
                     }
                 });
@@ -135,7 +123,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
             }else {
                 if (altitude == 0){
                     altitude = location.getAltitude() + altura;
-                    tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " m");
+                    tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " " + this.getString(R.string.unidade_medida));
                 }
                 if (latitude == 0){
                     latitude = Calcular.latitude(distancia, eixoYOrien, location.getLatitude());
@@ -152,12 +140,12 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
     }
 
     @Override
-    public void onStop(){
-        super.onStop();
+    protected void onPause(){
+        super.onPause();
         camera.stopPreview();
     }
     @Override
-    public void onResume(){
+    protected void onResume(){
         super.onResume();
         // Create an instance of Camera
         camera = getCameraInstance();
@@ -175,9 +163,12 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
             intent.putExtra("altitude", altitude);
             intent.putExtra("latitude", latitude);
             intent.putExtra("longitude", longitude);
+            intent.putExtra("userAltitude", location.getAltitude());
+            intent.putExtra("UserLatitude", location.getLatitude());
+            intent.putExtra("UserLongitude", location.getLongitude());
             startActivityForResult(intent, 0);
         } else {
-            Toast.makeText(MedicaoActivity.this, "Favor cálcular a distância e a altitude!", Toast.LENGTH_LONG).show();
+            showToast(this.getString(R.string.calcular_distancia_altitude));
         }
     }
 
@@ -203,7 +194,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario));
                 }else {
                     alturaUsuario = Double.parseDouble(temp);
-                    tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " m");
+                    tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
                 temp = ((TextView)viewAddValores.findViewById(R.id.addDistancia)).getText().toString();
@@ -212,7 +203,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                     tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia));
                 }else {
                     distancia = Double.parseDouble(temp);
-                    tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia) + " " + distancia + " m");
+                    tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia) + " " + distancia + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
                 temp = ((TextView)viewAddValores.findViewById(R.id.addAltitude)).getText().toString();
@@ -221,7 +212,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                     tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude));
                 }else {
                     altitude = Double.parseDouble(temp);
-                    tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude) + " " + altitude + " m");
+                    tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude) + " " + altitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
                 temp = ((TextView)viewAddValores.findViewById(R.id.addLatitude)).getText().toString();
@@ -230,7 +221,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                     tvLatitude.setText(MedicaoActivity.this.getString(R.string.latitude));
                 }else {
                     latitude = Double.parseDouble(temp);
-                    tvLatitude.setText(MedicaoActivity.this.getString(R.string.latitude) + " " + latitude + " m");
+                    tvLatitude.setText(MedicaoActivity.this.getString(R.string.latitude) + " " + latitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
                 temp = ((TextView)viewAddValores.findViewById(R.id.addLongitude)).getText().toString();
@@ -239,7 +230,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
                     tvLongitude.setText(MedicaoActivity.this.getString(R.string.latitude));
                 }else {
                     longitude = Double.parseDouble(temp);
-                    tvLongitude.setText(MedicaoActivity.this.getString(R.string.longitude) + " " + longitude + " m");
+                    tvLongitude.setText(MedicaoActivity.this.getString(R.string.longitude) + " " + longitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
                 alertaDialog.dismiss();
 
@@ -252,7 +243,7 @@ public class MedicaoActivity extends AppCompatActivity implements SensorEventLis
         });
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Informe os dados do ponto!");
+        //builder.setTitle("Informe os dados do ponto!");
         builder.setView(viewAddValores);
         alertaDialog  = builder.create();
         alertaDialog.show();

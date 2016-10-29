@@ -2,8 +2,7 @@ package br.com.android.sample.view.cadastrar;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Environment;
+
 import android.provider.MediaStore;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,8 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
-
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -27,9 +24,6 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.InputStream;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
@@ -41,7 +35,7 @@ import br.com.android.sample.view.autenticacao.ComumActivity;
 
 public class CadastrarPontoActivity extends ComumActivity implements DatabaseReference.CompletionListener{
 
-    private double altura, altitude, latitude, longitude;
+    private double altura, altitude, latitude, longitude, userLatitude, userLongitude, userAltitude;
     private Ponto ponto;
     private Comentario comentario;
     private Foto foto;
@@ -66,6 +60,9 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 altitude = params.getDouble("altitude");
                 latitude = params.getDouble("latitude");
                 longitude = params.getDouble("longitude");
+                userLatitude = params.getDouble("userLatitude");
+                userLongitude = params.getDouble("userLongitude");
+                userAltitude = params.getDouble("userAltitude");
             }
         }
 
@@ -75,7 +72,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
     }
 
     protected void initPonto(){
-        UUID uid = UUID.fromString("067e6162-3b6f-4ae2-a171-2470b63dff00");
+        UUID uid = UUID.fromString(this.getString(R.string.uuid));
         ponto = new Ponto();
         ponto.setId(uid.randomUUID() + "");
         ponto.setIdUser(mAuth.getCurrentUser().getUid());
@@ -85,6 +82,10 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         ponto.setLongitude(longitude);
         ponto.setAltura(altura);
         ponto.setAltitude(altitude);
+        ponto.setUserLatitude(userLatitude);
+        ponto.setUserLongitude(userLongitude);
+        ponto.setUserAltitude(userAltitude);
+
 
         comentario = new Comentario(uid.randomUUID() + "", ponto.getIdUser(),
                 coment.getText().toString(), ponto.getData() );
@@ -111,8 +112,6 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 bitmap = (Bitmap) bundle.get("data");
                 imagemFoto.setImageBitmap(bitmap);
             }
-        }else{
-            Toast.makeText(this, "Result: " + resultCode, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -163,7 +162,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
 
     @Override
     public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
-        showToast( "Ponto criado com sucesso!" );
+        showToast( this.getString(R.string.ponto_criado) );
         closeProgressBar();
         finish();
     }

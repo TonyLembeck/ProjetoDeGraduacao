@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/marcador_mais_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/marcador_mais_branco.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/logo_fundo_branco.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/logo_fundo_branco.png"
+    },
+    {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/logocponto.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/logocponto.png"
     },
@@ -10,6 +18,14 @@
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/logo_fundo_azul.png",
         "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/logo_fundo_azul.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/fundo_azul_comentario.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/fundo_azul_comentario.png"
+    },
+    {
+        "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/camera_azul.png",
+        "source": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/res/mipmap-xxxhdpi/camera_azul.png"
     },
     {
         "merged": "/home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",

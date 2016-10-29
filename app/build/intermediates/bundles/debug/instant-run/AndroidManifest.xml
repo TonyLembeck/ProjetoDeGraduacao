@@ -61,7 +61,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
-            android:name="br.com.android.sample.view.autenticacao.LoginActivity_"
+            android:name="br.com.android.sample.view.autenticacao.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -71,18 +71,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.android.sample.view.autenticacao.CadastrarUsuarioActivity_"
+            android:name="br.com.android.sample.view.autenticacao.CadastrarUsuarioActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.android.sample.view.autenticacao.ResetActivity_"
+            android:name="br.com.android.sample.view.autenticacao.ResetActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.android.sample.view.autenticacao.UpdateActivity_"
+            android:name="br.com.android.sample.view.autenticacao.UpdateActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="br.com.android.sample.view.home.HomeActivity_"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -99,8 +95,8 @@
             android:name="br.com.android.sample.view.cadastrar.CadastrarPontoActivity"
             android:screenOrientation="portrait" />
         <activity android:name="br.com.android.sample.view.ar.PontoARActivity" />
-        <activity android:name="br.com.android.sample.view.cadastrar.VisualizaPontoActivity" />
-        <activity android:name="br.com.android.sample.view.cadastrar.FotoViewActivity" />
+        <activity android:name="br.com.android.sample.view.cadastrar.VisualizaComentarioActivity" />
+        <activity android:name="br.com.android.sample.view.cadastrar.VisualizaFotoActivity" />
         <!--
              IMPORTANT: The following activities have to be added to each project 
 			which imports the DroidAR Library
