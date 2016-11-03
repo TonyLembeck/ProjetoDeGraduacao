@@ -22,6 +22,7 @@ public class Ponto {
     private double userAltitude;
     private double altitude;
     private double altura;
+    private double distancia;
     private Map<String, Comentario> listaComentario = new HashMap<String, Comentario>();
     private Map<String, Foto> listaImagem = new HashMap<String, Foto>();
 
@@ -114,6 +115,10 @@ public class Ponto {
         return altura;
     }
 
+    public double getDistancia() {return distancia;}
+
+    public void setDistancia(double distancia) {this.distancia = distancia;}
+
     public Comentario getListaComentario(String id) {
         return listaComentario.get(id);
     }
@@ -129,4 +134,6 @@ public class Ponto {
     public void setListaImagem(String id, Foto foto) {
         listaImagem.put(id, foto);
     }
+
+
 }

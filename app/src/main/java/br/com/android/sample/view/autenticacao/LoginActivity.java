@@ -194,10 +194,12 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
     }
 
     public void sendLoginData( View view ){
-        FirebaseCrash.log("LoginActivity:clickListener:button:sendLoginData()");
-        openProgressBar();
-        initUser();
-        verifyLogin();
+        if (validaFormulario()) {
+            FirebaseCrash.log("LoginActivity:clickListener:button:sendLoginData()");
+            openProgressBar();
+            initUser();
+            verifyLogin();
+        }
     }
 
 
@@ -261,5 +263,17 @@ public class LoginActivity extends ComumActivity implements GoogleApiClient.OnCo
                 )
             );
         showSnackbar( connectionResult.getErrorMessage() );
+    }
+
+    private boolean validaFormulario(){
+        if (email.getText().toString().equals("")){
+            showSnackbar( LoginActivity.this.getString(R.string.entre_email) );
+            return false;
+        }
+        if (senha.getText().toString().equals("")){
+            showSnackbar( LoginActivity.this.getString(R.string.entre_senha) );
+            return false;
+        }
+        return true;
     }
 }

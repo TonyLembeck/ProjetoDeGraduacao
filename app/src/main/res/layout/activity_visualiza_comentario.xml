@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/estrada1024x683"
+    android:background="@drawable/b5_backgrounds"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -13,20 +13,19 @@
     tools:context=".view.cadastrar.VisualizaComentarioActivity">
 
 
-    <TextView
+    <!--TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nomePonto"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/branco"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" /-->
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nomePonto"
         android:layout_above="@+id/button"
         android:paddingBottom="4dp">
 
@@ -83,7 +82,6 @@
         android:text="Fotos"
         android:id="@+id/button"
         android:textColor="@color/colorPrimaryDark"
-        android:background="@color/branco"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

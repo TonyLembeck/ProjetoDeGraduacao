@@ -1,8 +1,10 @@
 package br.com.android.sample.view.cadastrar;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -39,11 +41,6 @@ public class VisualizaComentarioActivity extends ComumActivity implements ViewSw
     private DatabaseReference firebaseComentRef, refComentario, refUser;
     private ArrayList<ItemComentario> listaItemComentario;
     private ListaAdapterComentario listaAdapterComentario;
-    //private Comentario coment;
-
-    //private ArrayList<String> nomes = new ArrayList<String>();
-
-    //private ArrayList<HashMap<String, String>> listDeComentarios = new ArrayList<HashMap<String, String>>();
     private String[] from;
     private int[] to;
     private View viewAddComentario;
@@ -60,19 +57,19 @@ public class VisualizaComentarioActivity extends ComumActivity implements ViewSw
         listView = (ListView) findViewById(R.id.listView);
         listaItemComentario = new ArrayList<ItemComentario>();
         listaAdapterComentario = new ListaAdapterComentario(this, listaItemComentario);
-        TextView nomePonto = (TextView) findViewById(R.id.nomePonto);
         Intent intent = getIntent();
         if (intent != null) {
             Bundle params = intent.getExtras();
             if (params != null){
                 idPonto = params.getString("idPonto");
-                nomePonto.setText(params.getString("nome"));
+                setTitle(params.getString("nome"));
             }
         }
         progressBar = (ProgressBar) findViewById(R.id.progressBarComentario);
         from = new String[] {"nome", "comentario"};
         to = new int[] {android.R.id.text1, android.R.id.text2};
         getComentarios();
+
     }
 
     @Override
@@ -107,14 +104,7 @@ public class VisualizaComentarioActivity extends ComumActivity implements ViewSw
                         refUser.child(coment.getIdUser()).child("name").addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                /*HashMap<String, String> itemComentario = new HashMap<String, String>();
-                                itemComentario.put( "nome", dataSnapshot.getValue(String.class));
-                                itemComentario.put( "comentario", coment.getComentario());
-*/
-
-
                                 listaItemComentario.add(new ItemComentario( dataSnapshot.getValue(String.class), coment.getComentario()));
-                                //listDeComentarios.add(itemComentario);
                                 listView.setAdapter(listaAdapterComentario);
 
                                 progressBar.setVisibility( View.GONE);

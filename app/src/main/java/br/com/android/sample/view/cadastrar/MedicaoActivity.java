@@ -18,9 +18,16 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 
 import br.com.android.sample.R;
 import br.com.android.sample.infrastructure.calcular.Calcular;
@@ -41,12 +48,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
     private TextView tvLatitude;
     private TextView tvLongitude;
 
-    private double alturaUsuario;
-    private double distancia;
-    private double altura;
-    private double altitude;
-    private double latitude;
-    private double longitude;
+    private double alturaUsuario, distancia, altura, altitude, latitude, longitude, userAltitude, userLatitude, userLongitude;
 
     private static double eixoZOrien;
     private static double eixoZAccel;
@@ -98,7 +100,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         }
-
+        Carregar();
     }
 
 
@@ -122,15 +124,18 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                 builder.show();
             }else {
                 if (altitude == 0){
-                    altitude = location.getAltitude() + altura;
+                    userAltitude = location.getAltitude();
+                    altitude = userAltitude + altura;
                     tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " " + this.getString(R.string.unidade_medida));
                 }
                 if (latitude == 0){
-                    latitude = Calcular.latitude(distancia, eixoYOrien, location.getLatitude());
+                    userLatitude = location.getLatitude();
+                    latitude = Calcular.latitude(distancia, eixoYOrien, userLatitude);
                     tvLatitude.setText(this.getString(R.string.latitude) + " " + latitude);
                 }
                 if (longitude == 0) {
-                    longitude = Calcular.longitude(distancia, eixoYOrien, location.getLongitude());
+                    userLongitude = location.getLongitude();
+                    longitude = Calcular.longitude(distancia, eixoYOrien, userLongitude);
                     tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
                 }
             }
@@ -163,9 +168,10 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
             intent.putExtra("altitude", altitude);
             intent.putExtra("latitude", latitude);
             intent.putExtra("longitude", longitude);
-            intent.putExtra("userAltitude", location.getAltitude());
-            intent.putExtra("UserLatitude", location.getLatitude());
-            intent.putExtra("UserLongitude", location.getLongitude());
+            intent.putExtra("userAltitude", userAltitude);
+            intent.putExtra("userLatitude", userLatitude);
+            intent.putExtra("userLongitude", userLongitude);
+            intent.putExtra("distancia", distancia);
             startActivityForResult(intent, 0);
         } else {
             showToast(this.getString(R.string.calcular_distancia_altitude));
@@ -192,9 +198,25 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                 if (temp.equals("")){
                     alturaUsuario = 0;
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario));
+                    salvar(temp);
                 }else {
                     alturaUsuario = Double.parseDouble(temp);
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
+                    File arq;
+                    byte[] dados;
+                    try {
+                        arq = new File(ObterDiretorio(), "autura_user");
+                        FileOutputStream fos;
+
+                        dados = temp.getBytes();
+
+                        fos = new FileOutputStream(arq);
+                        fos.write(dados);
+                        fos.flush();
+                        fos.close();
+                    }
+                    catch (Exception e){
+                    }
                 }
 
                 temp = ((TextView)viewAddValores.findViewById(R.id.addDistancia)).getText().toString();
@@ -280,5 +302,40 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
     public void onAccuracyChanged(Sensor sensor, int i) {
 
     }
+    private String ObterDiretorio()
+    {
+        File root = android.os.Environment.getExternalStorageDirectory();
+        return root.toString();
+    }
 
+    private void Carregar() {
+        File arq;
+        BufferedReader br;
+        try {
+
+            arq = new File(ObterDiretorio(), "autura_user");
+            br = new BufferedReader(new FileReader(arq));
+
+            alturaUsuario = Double.parseDouble(br.readLine());
+            tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
+
+        } catch (Exception e) {
+        }
+    }
+    public void salvar(String temp) {
+        File arq;
+        byte[] dados;
+        try {
+            arq = new File(ObterDiretorio(), "autura_user");
+            FileOutputStream fos;
+
+            dados = temp.getBytes();
+
+            fos = new FileOutputStream(arq);
+            fos.write(dados);
+            fos.flush();
+            fos.close();
+        } catch (Exception e) {
+        }
+    }
 }

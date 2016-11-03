@@ -449,7 +449,7 @@
     <string name="adicionar_foto">Adicionar foto</string>
     <string name="altitude">Altitude:</string>
     <string name="altura">Altura: </string>
-    <string name="altura_usuario">Usuário: </string>
+    <string name="altura_usuario">Sua altura: </string>
     <string name="app_name">CPonto</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="ar">Realidade Aumentada</string>
@@ -541,7 +541,6 @@
     <string name="entre_email">Entre com o E-mail!</string>
     <string name="entre_nome">Entre com o Nome!</string>
     <string name="entre_senha">Entre com a senha!</string>
-    <string name="errorstring">de.rwth.error</string>
     <string name="escrever_comentario">Favor escrever um comentário!</string>
     <string name="firebase_database_url" translatable="false">https://projeto-de-graduacao.firebaseio.com</string>
     <string name="foto">Foto:</string>
@@ -556,7 +555,7 @@
     <string name="google_storage_bucket" translatable="false">projeto-de-graduacao.appspot.com</string>
     <string name="gps_nao_responde">GPS do dispositivo não está respondendo!</string>
     <string name="iniciar_rec_acesso">Iniciar recuperação acesso</string>
-    <string name="inserir_altura_usuario">Favor inserir a altura do usuário!</string>
+    <string name="inserir_altura_usuario">Favor inserir a sua altura!</string>
     <string name="label_applicationName">Android Sample</string>
     <string name="label_authentication">Autenticação do Usuário</string>
     <string name="label_begin">ENTRAR</string>

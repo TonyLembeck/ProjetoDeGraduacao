@@ -57,13 +57,15 @@
 
         <activity
             android:name=".view.cadastrar.CadastrarPontoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
 
         <activity
             android:name=".view.ar.PontoARActivity" />
 
         <activity
-            android:name=".view.cadastrar.VisualizaComentarioActivity" />
+            android:name=".view.cadastrar.VisualizaComentarioActivity"
+            android:theme="@style/AppTheme"/>
 
         <activity
             android:name=".view.cadastrar.VisualizaFotoActivity"></activity>

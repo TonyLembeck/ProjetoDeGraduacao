@@ -121,6 +121,11 @@ public class VisualizaFotoActivity extends ComumActivity {
             if(bundle != null){
                 bitmap = (Bitmap) bundle.get("data");
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setNeutralButton(this.getString(R.string.cancelar), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        showToast(VisualizaFotoActivity.this.getString(R.string.foto_cancelada));
+                    }
+                });
                 builder.setMessage(this.getString(R.string.confirmar_nova_foto));
                 builder.setPositiveButton(VisualizaFotoActivity.this.getString(R.string.confirmar), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface arg0, int arg1) {
@@ -166,11 +171,6 @@ public class VisualizaFotoActivity extends ComumActivity {
                                 //Uri downloadUrl = taskSnapshot.getDownloadUrl();
                             }
                         });
-                    }
-                });
-                builder.setNeutralButton(this.getString(R.string.cancelar), new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface arg0, int arg1) {
-                        showToast(VisualizaFotoActivity.this.getString(R.string.foto_cancelada));
                     }
                 });
                 builder.show();

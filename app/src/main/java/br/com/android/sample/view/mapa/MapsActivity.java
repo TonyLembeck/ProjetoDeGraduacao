@@ -162,7 +162,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }else {
                         latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
                         mMap.setMyLocationEnabled(true);
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngTemp, 13));
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
                         Ponto ponto = listaPonto.get(i);
@@ -195,7 +194,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }else {
                         latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
                         mMap.setMyLocationEnabled(true);
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngTemp, 13));
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
                         Ponto ponto = (Ponto) listaPonto.get(i);

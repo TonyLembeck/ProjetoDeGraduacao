@@ -32,6 +32,14 @@
                 android:singleLine="true"
                 android:textColorHint="@color/branco"
                 />
+            <ProgressBar
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/reset_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
 
         </android.support.design.widget.TextInputLayout>
 

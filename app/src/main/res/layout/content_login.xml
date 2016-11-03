@@ -89,15 +89,14 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <TextView
+            <!--TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="right"
                 android:onClick="callReset"
                 android:text="@string/recuperar_senha"
-                android:textColor="@color/branco" />
-
+                android:textColor="@color/branco" /-->
             <Button
                 android:onClick="sendLoginData"
                 android:id="@+id/email_sign_in_button"

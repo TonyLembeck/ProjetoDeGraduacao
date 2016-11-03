@@ -35,7 +35,7 @@ import br.com.android.sample.view.autenticacao.ComumActivity;
 
 public class CadastrarPontoActivity extends ComumActivity implements DatabaseReference.CompletionListener{
 
-    private double altura, altitude, latitude, longitude, userLatitude, userLongitude, userAltitude;
+    private double altura, altitude, latitude, longitude, userLatitude, userLongitude, userAltitude, distancia;
     private Ponto ponto;
     private Comentario comentario;
     private Foto foto;
@@ -63,12 +63,10 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 userLatitude = params.getDouble("userLatitude");
                 userLongitude = params.getDouble("userLongitude");
                 userAltitude = params.getDouble("userAltitude");
+                distancia = params.getDouble("distancia");
             }
         }
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        setTitle(this.getString(R.string.cadastrar_ponto));
     }
 
     protected void initPonto(){
@@ -85,6 +83,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         ponto.setUserLatitude(userLatitude);
         ponto.setUserLongitude(userLongitude);
         ponto.setUserAltitude(userAltitude);
+        ponto.setDistancia(distancia);
 
 
         comentario = new Comentario(uid.randomUUID() + "", ponto.getIdUser(),

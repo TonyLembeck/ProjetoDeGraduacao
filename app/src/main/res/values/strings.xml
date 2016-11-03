@@ -49,7 +49,7 @@
 
 
     <!--///////////////////////////////// Cadastro //////////////////////////////////////////////-->
-    <string name="altura_usuario">Usuário: </string>
+    <string name="altura_usuario">Sua altura: </string>
     <string name="distancia">Distância: </string>
     <string name="altura">Altura: </string>
     <string name="altitude">Altitude:</string>
@@ -75,7 +75,7 @@
     <string name="senha_nao_conf">Senhas não conferem!</string>
     <string name="ok">OK</string>
     <string name="gps_nao_responde">GPS do dispositivo não está respondendo!</string>
-    <string name="inserir_altura_usuario">Favor inserir a altura do usuário!</string>
+    <string name="inserir_altura_usuario">Favor inserir a sua altura!</string>
     <string name="calcular_distancia_altitude">Favor cálcular a distância e a altitude!</string>
     <string name="google_login_falhou">"Google login falhou, tente novamente!"</string>
     <string name="login_falhou">Login falhou!</string>
