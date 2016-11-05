@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/predo"
     android:orientation="vertical"
-    tools:context=".view.cadastrar.VisualizaFotoActivity">
+    tools:context=".view.visualizar.VisualizaFotoActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

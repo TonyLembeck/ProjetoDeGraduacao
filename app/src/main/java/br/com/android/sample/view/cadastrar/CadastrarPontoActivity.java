@@ -121,6 +121,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pontoRef = database.getReference("pontos");
 
+
         pontoRef.child(ponto.getId()).setValue(ponto);
 
         DatabaseReference novaRef = pontoRef.child(ponto.getId());
@@ -132,7 +133,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         novaRef.child("comentarios").child(comentario.getId()).setValue(comentario);
 
         // Create a storage reference from our app
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://projeto-de-graduacao.appspot.com");
+       /* StorageReference storageRef = storage.getReferenceFromUrl("gs://projeto-de-graduacao.appspot.com");
 
         // Create a reference to 'images/mountains.jpg'
         StorageReference fotoRef = storageRef.child("fotos/" + ponto.getId()+ "/"  + foto.getId());
@@ -155,7 +156,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 //Uri downloadUrl = taskSnapshot.getDownloadUrl();
             }
         });
-
+*/
         finish();
     }
 

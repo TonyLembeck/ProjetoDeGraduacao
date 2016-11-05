@@ -39,7 +39,7 @@ import java.util.ArrayList;
 import br.com.android.sample.R;
 import br.com.android.sample.domain.Ponto;
 import br.com.android.sample.domain.util.LibraryClass;
-import br.com.android.sample.view.cadastrar.VisualizaComentarioActivity;
+import br.com.android.sample.view.visualizar.VisualizaComentarioActivity;
 
 public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekBarChangeListener,
         OnClickBeyondarObjectListener {

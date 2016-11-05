@@ -112,27 +112,27 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/confirmar"
-            android:id="@+id/confirmarAddValores"
-            android:layout_gravity="left"
+            android:text="@string/cancelar"
+            android:id="@+id/cancelarAddValores"
+            android:layout_gravity="right"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginLeft="39dp"
-            android:layout_marginStart="39dp" />
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cancelar"
-            android:id="@+id/cancelarAddValores"
+            android:text="@string/confirmar"
+            android:id="@+id/confirmarAddValores"
             android:layout_gravity="right"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="48dp"
-            android:layout_marginEnd="48dp" />
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp" />
 
     </RelativeLayout>
 

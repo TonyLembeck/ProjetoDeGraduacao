@@ -42,11 +42,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
     private Location location;
     private LocationManager locationManager;
 
-    private TextView tvAlturaUsuario;
-    private TextView tvDistancia;
-    private TextView tvAltitude;
-    private TextView tvLatitude;
-    private TextView tvLongitude;
+    private TextView tvAlturaUsuario, tvDistancia, tvAltitude, tvLatitude, tvLongitude, orientacoesUser;
 
     private double alturaUsuario, distancia, altura, altitude, latitude, longitude, userAltitude, userLatitude, userLongitude;
 
@@ -70,7 +66,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         tvAltitude = (TextView) findViewById(R.id.altura);
         tvLatitude = (TextView) findViewById(R.id.latitude);
         tvLongitude = (TextView) findViewById(R.id.longitude);
-
+        orientacoesUser = (TextView) findViewById(R.id.orientacoesUser);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -99,7 +95,10 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         } else {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            if (location == null)
+                location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
         }
+        orientacoesUser.setText(this.getString(R.string.orientacoes_user_base));
         Carregar();
     }
 
@@ -111,6 +110,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         }else if (distancia == 0) {
             distancia = Calcular.distancia(alturaUsuario, eixoZOrien);
             tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
+            orientacoesUser.setText(this.getString(R.string.orientacoes_user_topo));
         }else {
             tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
             altura = Calcular.altura(alturaUsuario, distancia, eixoZOrien, eixoZAccel);
@@ -127,6 +127,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                     userAltitude = location.getAltitude();
                     altitude = userAltitude + altura;
                     tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " " + this.getString(R.string.unidade_medida));
+                    orientacoesUser.setText("");
                 }
                 if (latitude == 0){
                     userLatitude = location.getLatitude();
@@ -198,31 +199,16 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                 if (temp.equals("")){
                     alturaUsuario = 0;
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario));
-                    salvar(temp);
                 }else {
                     alturaUsuario = Double.parseDouble(temp);
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
-                    File arq;
-                    byte[] dados;
-                    try {
-                        arq = new File(ObterDiretorio(), "autura_user");
-                        FileOutputStream fos;
-
-                        dados = temp.getBytes();
-
-                        fos = new FileOutputStream(arq);
-                        fos.write(dados);
-                        fos.flush();
-                        fos.close();
-                    }
-                    catch (Exception e){
-                    }
                 }
-
+                salvar(temp);
                 temp = ((TextView)viewAddValores.findViewById(R.id.addDistancia)).getText().toString();
                 if (temp.equals("")){
                     distancia = 0;
                     tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia));
+                    orientacoesUser.setText(MedicaoActivity.this.getString(R.string.orientacoes_user_base));
                 }else {
                     distancia = Double.parseDouble(temp);
                     tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia) + " " + distancia + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
@@ -232,6 +218,8 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                 if (temp.equals("")){
                     altitude = 0;
                     tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude));
+                    if (distancia > 0)
+                        orientacoesUser.setText(MedicaoActivity.this.getString(R.string.orientacoes_user_topo));
                 }else {
                     altitude = Double.parseDouble(temp);
                     tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude) + " " + altitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
@@ -312,7 +300,6 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         File arq;
         BufferedReader br;
         try {
-
             arq = new File(ObterDiretorio(), "autura_user");
             br = new BufferedReader(new FileReader(arq));
 
@@ -328,7 +315,6 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         try {
             arq = new File(ObterDiretorio(), "autura_user");
             FileOutputStream fos;
-
             dados = temp.getBytes();
 
             fos = new FileOutputStream(arq);

@@ -7,10 +7,15 @@
     <uses-permission android:name="br.com.android.sample.view.mapa.MAPS_RECEVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location" />
+    <uses-feature android:name="android.hardware.location.network" />
+
 
     <permission
         android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
@@ -64,11 +69,11 @@
             android:name=".view.ar.PontoARActivity" />
 
         <activity
-            android:name=".view.cadastrar.VisualizaComentarioActivity"
+            android:name=".view.visualizar.VisualizaComentarioActivity"
             android:theme="@style/AppTheme"/>
 
         <activity
-            android:name=".view.cadastrar.VisualizaFotoActivity"></activity>
+            android:name=".view.visualizar.VisualizaFotoActivity"></activity>
     </application>
 
 </manifest>

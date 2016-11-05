@@ -13,10 +13,14 @@
     <uses-permission android:name="br.com.android.sample.view.mapa.MAPS_RECEVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location" />
+    <uses-feature android:name="android.hardware.location.network" />
 
     <permission
         android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
@@ -80,9 +84,9 @@
             android:theme="@style/AppTheme" />
         <activity android:name="br.com.android.sample.view.ar.PontoARActivity" />
         <activity
-            android:name="br.com.android.sample.view.cadastrar.VisualizaComentarioActivity"
+            android:name="br.com.android.sample.view.visualizar.VisualizaComentarioActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name="br.com.android.sample.view.cadastrar.VisualizaFotoActivity" />
+        <activity android:name="br.com.android.sample.view.visualizar.VisualizaFotoActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

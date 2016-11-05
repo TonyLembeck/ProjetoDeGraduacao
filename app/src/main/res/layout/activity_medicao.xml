@@ -39,6 +39,16 @@
 
     </FrameLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orientacoesUser"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="asdfasfdas"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/verde"
+        android:layout_gravity="center_horizontal|top" />
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

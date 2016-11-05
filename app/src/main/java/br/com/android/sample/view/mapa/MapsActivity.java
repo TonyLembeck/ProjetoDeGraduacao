@@ -22,7 +22,7 @@ import br.com.android.sample.domain.util.LibraryClass;
 import br.com.android.sample.view.ar.PontoARActivity;
 import br.com.android.sample.view.autenticacao.LoginActivity;
 import br.com.android.sample.view.cadastrar.MedicaoActivity;
-import br.com.android.sample.view.cadastrar.VisualizaComentarioActivity;
+import br.com.android.sample.view.visualizar.VisualizaComentarioActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -78,16 +78,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         } else {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            if (location == null)
+                location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
         }
 
 
-    }
-
-    public void onAddPontoClick(View view){
-        Intent intent = new Intent(MapsActivity.this, MedicaoActivity.class);
-        intent.putExtra("latitude", latitude);
-        intent.putExtra("longitude", longitude);
-        startActivity(intent);
     }
 
     @Override
@@ -182,7 +177,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onMapClick(LatLng point) {
                 if (marker != null) {
                     mMap.clear();
-                    LatLng latLngTemp;
                     if (location == null){
                         AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
                         builder.setMessage(MapsActivity.this.getString(R.string.gps_nao_responde));
@@ -192,7 +186,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         });
                         builder.show();
                     }else {
-                        latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
                         mMap.setMyLocationEnabled(true);
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
@@ -219,11 +212,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 return false;
             }
         });
-    }
-
-    public void onARClick(View view)
-    {
-        startActivity(new Intent(this, PontoARActivity.class));
     }
 
     // MENU

@@ -96,6 +96,7 @@
     <string name="novo_ponto">Novo Ponto</string>
     <string name="unidade_medida">m</string>
     <string name="ar">Realidade Aumentada</string>
-
+    <string name="orientacoes_user_base">Após informar sua altura, aponte o alvo na base\n do objeto e dispare para calcular a distância!</string>
+    <string name="orientacoes_user_topo">Aponte o alvo no topo do objeto \n e dispare para calcular a altura!</string>
 
 </resources>
