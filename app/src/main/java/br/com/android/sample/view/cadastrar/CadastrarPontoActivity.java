@@ -35,7 +35,7 @@ import br.com.android.sample.view.autenticacao.ComumActivity;
 
 public class CadastrarPontoActivity extends ComumActivity implements DatabaseReference.CompletionListener{
 
-    private double altura, altitude, latitude, longitude, userLatitude, userLongitude, userAltitude, distancia;
+    private double altura, altitude, latitude, longitude, userLatitude, userLongitude, userAltitude, distancia, anguloBussula, anguloAccelerometro;
     private Ponto ponto;
     private Comentario comentario;
     private Foto foto;
@@ -64,6 +64,8 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 userLongitude = params.getDouble("userLongitude");
                 userAltitude = params.getDouble("userAltitude");
                 distancia = params.getDouble("distancia");
+                anguloBussula = params.getDouble("anguloBussula");
+                anguloAccelerometro = params.getDouble("anguloAccelerometro");
             }
         }
         setTitle(this.getString(R.string.cadastrar_ponto));
@@ -84,6 +86,8 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         ponto.setUserLongitude(userLongitude);
         ponto.setUserAltitude(userAltitude);
         ponto.setDistancia(distancia);
+        ponto.setAnguloBussula(anguloBussula);
+        ponto.setAnguloAccelerometro(anguloAccelerometro);
 
 
         comentario = new Comentario(uid.randomUUID() + "", ponto.getIdUser(),
@@ -114,16 +118,13 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
         }
     }
 
-    public void onCadastarPontoClick(View view){
+    protected void onCadastarPontoClick(View view){
 
         initPonto();
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pontoRef = database.getReference("pontos");
-
-
         pontoRef.child(ponto.getId()).setValue(ponto);
-
         DatabaseReference novaRef = pontoRef.child(ponto.getId());
 
         novaRef.child("fotos").child(foto.getId()).child("data").setValue(foto.getData());
@@ -132,8 +133,15 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
 
         novaRef.child("comentarios").child(comentario.getId()).setValue(comentario);
 
+        fotoUpdate();
+
+        finish();
+    }
+
+    protected void fotoUpdate(){
+
         // Create a storage reference from our app
-       /* StorageReference storageRef = storage.getReferenceFromUrl("gs://projeto-de-graduacao.appspot.com");
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://projeto-de-graduacao.appspot.com");
 
         // Create a reference to 'images/mountains.jpg'
         StorageReference fotoRef = storageRef.child("fotos/" + ponto.getId()+ "/"  + foto.getId());
@@ -156,10 +164,7 @@ public class CadastrarPontoActivity extends ComumActivity implements DatabaseRef
                 //Uri downloadUrl = taskSnapshot.getDownloadUrl();
             }
         });
-*/
-        finish();
     }
-
     @Override
     public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
         showToast( this.getString(R.string.ponto_criado) );

@@ -96,8 +96,6 @@ public class VisualizaComentarioActivity extends ComumActivity implements ViewSw
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         final Comentario coment = dataSnapshot.getValue(Comentario.class);
 
-
-
                         refUser.child(coment.getIdUser()).child("name").addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -110,9 +108,7 @@ public class VisualizaComentarioActivity extends ComumActivity implements ViewSw
                             @Override
                             public void onCancelled(DatabaseError databaseError) {}
                         });
-
                     }
-
                     @Override
                     public void onCancelled(DatabaseError databaseError) {}
                 });

@@ -87,6 +87,7 @@
             android:name="br.com.android.sample.view.visualizar.VisualizaComentarioActivity"
             android:theme="@style/AppTheme" />
         <activity android:name="br.com.android.sample.view.visualizar.VisualizaFotoActivity" />
+        <activity android:name="br.com.android.sample.view.mapa.TesteActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

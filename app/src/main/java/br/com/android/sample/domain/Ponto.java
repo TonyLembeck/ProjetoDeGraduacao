@@ -23,6 +23,8 @@ public class Ponto {
     private double altitude;
     private double altura;
     private double distancia;
+    private double anguloBussula;
+    private double anguloAccelerometro;
     private Map<String, Comentario> listaComentario = new HashMap<String, Comentario>();
     private Map<String, Foto> listaImagem = new HashMap<String, Foto>();
 
@@ -118,6 +120,14 @@ public class Ponto {
     public double getDistancia() {return distancia;}
 
     public void setDistancia(double distancia) {this.distancia = distancia;}
+
+    public double getAnguloBussula() { return anguloBussula; }
+
+    public void setAnguloBussula(double anguloBussula) { this.anguloBussula = anguloBussula; }
+
+    public double getAnguloAccelerometro() { return anguloAccelerometro; }
+
+    public void setAnguloAccelerometro(double anguloAccelerometro) { this.anguloAccelerometro = anguloAccelerometro; }
 
     public Comentario getListaComentario(String id) {
         return listaComentario.get(id);

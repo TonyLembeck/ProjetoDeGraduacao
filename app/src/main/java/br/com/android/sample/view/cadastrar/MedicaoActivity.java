@@ -44,12 +44,12 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
 
     private TextView tvAlturaUsuario, tvDistancia, tvAltitude, tvLatitude, tvLongitude, orientacoesUser;
 
-    private double alturaUsuario, distancia, altura, altitude, latitude, longitude, userAltitude, userLatitude, userLongitude;
+    private double alturaUsuario, distancia, altura, altitude, latitude, longitude, userAltitude, userLatitude,
+            userLongitude, anguloBussula, anguloAccelerometro;
 
     private static double eixoZOrien;
     private static double eixoZAccel;
     private static double eixoYOrien;
-    private static double pressao;
 
     private View viewAddValores;
     private AlertDialog alertaDialog;
@@ -87,8 +87,6 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
-        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
-        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
 
         if (ActivityCompat.checkSelfPermission(MedicaoActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -108,9 +106,13 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         if(alturaUsuario == 0){
             showToast(this.getString(R.string.inserir_altura_usuario));
         }else if (distancia == 0) {
-            distancia = Calcular.distancia(alturaUsuario, eixoZOrien);
-            tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
-            orientacoesUser.setText(this.getString(R.string.orientacoes_user_topo));
+            if(eixoZAccel > 0) {
+                anguloAccelerometro = eixoZOrien;
+                distancia = Calcular.distancia(alturaUsuario, eixoZOrien);
+                tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
+                orientacoesUser.setText(this.getString(R.string.orientacoes_user_topo));
+            } else
+                Toast.makeText(this, this.getString(R.string.horizonte), Toast.LENGTH_LONG).show();
         }else {
             tvDistancia.setText(this.getString(R.string.distancia) + " " + distancia + " " + this.getString(R.string.unidade_medida));
             altura = Calcular.altura(alturaUsuario, distancia, eixoZOrien, eixoZAccel);
@@ -123,11 +125,14 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                 });
                 builder.show();
             }else {
+                anguloBussula = eixoYOrien + 88;
+                if (anguloBussula > 359)
+                    anguloBussula = anguloBussula - 360;
                 if (altitude == 0){
-                    userAltitude = location.getAltitude();
-                    altitude = userAltitude + altura;
-                    tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " " + this.getString(R.string.unidade_medida));
-                    orientacoesUser.setText("");
+                        userAltitude = location.getAltitude();
+                        altitude = userAltitude + altura;
+                        tvAltitude.setText(this.getString(R.string.altitude) + " " + altitude + " " + this.getString(R.string.unidade_medida));
+                        orientacoesUser.setText("");
                 }
                 if (latitude == 0){
                     userLatitude = location.getLatitude();
@@ -140,9 +145,7 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
                     tvLongitude.setText(this.getString(R.string.longitude) + " " + longitude);
                 }
             }
-
         }
-
     }
 
     @Override
@@ -173,6 +176,8 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
             intent.putExtra("userLatitude", userLatitude);
             intent.putExtra("userLongitude", userLongitude);
             intent.putExtra("distancia", distancia);
+            intent.putExtra("anguloBussula", anguloBussula);
+            intent.putExtra("anguloAccelerometro", anguloAccelerometro);
             startActivityForResult(intent, 0);
         } else {
             showToast(this.getString(R.string.calcular_distancia_altitude));
@@ -194,52 +199,51 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         //definimos para o botão do layout um clickListener
         viewAddValores.findViewById(R.id.confirmarAddValores).setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-                String temp;
-                temp = ((TextView)viewAddValores.findViewById(R.id.addAltUser)).getText().toString();
-                if (temp.equals("")){
+                Double temp;
+                temp = getDouble(((TextView)viewAddValores.findViewById(R.id.addAltUser)).getText().toString());
+                if (temp > 0){
+                    alturaUsuario = temp;
+                    tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
+                }else {
                     alturaUsuario = 0;
                     tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario));
-                }else {
-                    alturaUsuario = Double.parseDouble(temp);
-                    tvAlturaUsuario.setText(MedicaoActivity.this.getString(R.string.altura_usuario) + " " + alturaUsuario + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
                 salvar(temp);
-                temp = ((TextView)viewAddValores.findViewById(R.id.addDistancia)).getText().toString();
-                if (temp.equals("")){
+                temp = getDouble(((TextView)viewAddValores.findViewById(R.id.addDistancia)).getText().toString());
+                if (temp > 0){
+                    distancia = temp;
+                    tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia) + " " + distancia + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
+                }else {
                     distancia = 0;
                     tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia));
                     orientacoesUser.setText(MedicaoActivity.this.getString(R.string.orientacoes_user_base));
-                }else {
-                    distancia = Double.parseDouble(temp);
-                    tvDistancia.setText(MedicaoActivity.this.getString(R.string.distancia) + " " + distancia + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
-
-                temp = ((TextView)viewAddValores.findViewById(R.id.addAltitude)).getText().toString();
-                if (temp.equals("")){
+                temp = getDouble(((TextView)viewAddValores.findViewById(R.id.addAltitude)).getText().toString());
+                if (temp > 0){
+                    altitude = temp;
+                    tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude) + " " + altitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
+                }else {
                     altitude = 0;
                     tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude));
                     if (distancia > 0)
                         orientacoesUser.setText(MedicaoActivity.this.getString(R.string.orientacoes_user_topo));
-                }else {
-                    altitude = Double.parseDouble(temp);
-                    tvAltitude.setText(MedicaoActivity.this.getString(R.string.altitude) + " " + altitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
-                temp = ((TextView)viewAddValores.findViewById(R.id.addLatitude)).getText().toString();
-                if (temp.equals("")){
+                temp = getDouble(((TextView)viewAddValores.findViewById(R.id.addLatitude)).getText().toString());
+                if (temp > 90 || temp < -90 || temp == 0){
                     latitude = 0;
                     tvLatitude.setText(MedicaoActivity.this.getString(R.string.latitude));
                 }else {
-                    latitude = Double.parseDouble(temp);
+                    latitude = temp;
                     tvLatitude.setText(MedicaoActivity.this.getString(R.string.latitude) + " " + latitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
 
-                temp = ((TextView)viewAddValores.findViewById(R.id.addLongitude)).getText().toString();
-                if (temp.equals("")){
+                temp = getDouble(((TextView)viewAddValores.findViewById(R.id.addLongitude)).getText().toString());
+                if (temp > 180 || temp < -180 || temp == 0){
                     longitude = 0;
                     tvLongitude.setText(MedicaoActivity.this.getString(R.string.latitude));
                 }else {
-                    longitude = Double.parseDouble(temp);
+                    longitude = temp;
                     tvLongitude.setText(MedicaoActivity.this.getString(R.string.longitude) + " " + longitude + " " + MedicaoActivity.this.getString(R.string.unidade_medida));
                 }
                 alertaDialog.dismiss();
@@ -276,12 +280,14 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
             case Sensor.TYPE_ORIENTATION:
                 eixoYOrien = sensorEvent.values[0];
                 eixoZOrien = sensorEvent.values[2];
+                if (distancia == 0)
+                    tvDistancia.setText(this.getString(R.string.distancia) + " " + Calcular.distancia(alturaUsuario, eixoZOrien) + " " + this.getString(R.string.unidade_medida));
+                else if(altitude == 0 )
+                    tvAltitude.setText(this.getString(R.string.altitude) + " " + (Calcular.altura(alturaUsuario, distancia, eixoZOrien, eixoZAccel)) + " " + this.getString(R.string.unidade_medida));
                 break;
             case Sensor.TYPE_ACCELEROMETER:
                 eixoZAccel = sensorEvent.values[2];
                 break;
-            case Sensor.TYPE_PRESSURE:
-                pressao = sensorEvent.values[0];
         }
 
     }
@@ -309,13 +315,13 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
         } catch (Exception e) {
         }
     }
-    public void salvar(String temp) {
+    public void salvar(Double temp) {
         File arq;
         byte[] dados;
         try {
             arq = new File(ObterDiretorio(), "autura_user");
             FileOutputStream fos;
-            dados = temp.getBytes();
+            dados = (temp+"").getBytes();
 
             fos = new FileOutputStream(arq);
             fos.write(dados);
@@ -323,5 +329,14 @@ public class MedicaoActivity extends ComumActivity implements SensorEventListene
             fos.close();
         } catch (Exception e) {
         }
+    }
+
+    private double getDouble(String numero){
+        try{
+            return Double.parseDouble(numero);
+        }catch (NumberFormatException e){
+            Toast.makeText(this, this.getString(R.string.nao_e_numero), Toast.LENGTH_LONG).show();
+        }
+        return 0;
     }
 }

@@ -16,7 +16,6 @@
     <uses-feature android:name="android.hardware.location" />
     <uses-feature android:name="android.hardware.location.network" />
 
-
     <permission
         android:name="br.com.android.sample.view.mapa.MAPS_RECEVE"
         android:protectionLevel="signature" />
@@ -54,26 +53,20 @@
         <activity
             android:name=".view.mapa.MapsActivity"
             android:theme="@style/AppTheme" />
-
         <activity
             android:name=".view.cadastrar.MedicaoActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".view.cadastrar.CadastrarPontoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
-
-        <activity
-            android:name=".view.ar.PontoARActivity" />
-
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.ar.PontoARActivity" />
         <activity
             android:name=".view.visualizar.VisualizaComentarioActivity"
-            android:theme="@style/AppTheme"/>
-
-        <activity
-            android:name=".view.visualizar.VisualizaFotoActivity"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.visualizar.VisualizaFotoActivity" />
+        <activity android:name=".view.mapa.TesteActivity"></activity>
     </application>
 
 </manifest>

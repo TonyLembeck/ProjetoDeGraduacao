@@ -555,6 +555,7 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB2l5KSKY3cseqZ0y6Bq8sd0jRwcsT7MsA</string>
     <string name="google_storage_bucket" translatable="false">projeto-de-graduacao.appspot.com</string>
     <string name="gps_nao_responde">GPS do dispositivo não está respondendo!</string>
+    <string name="horizonte">Favor apontar o marcador central para a base do objeto!</string>
     <string name="iniciar_rec_acesso">Iniciar recuperação acesso</string>
     <string name="inserir_altura_usuario">Favor inserir a sua altura!</string>
     <string name="label_applicationName">Android Sample</string>
@@ -595,6 +596,7 @@
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
+    <string name="nao_e_numero">Favor inserir apenas numeros para os valores desejados!</string>
     <string name="nome">Nome:</string>
     <string name="nome_completo">Nome Completo:</string>
     <string name="novo_ponto">Novo Ponto</string>

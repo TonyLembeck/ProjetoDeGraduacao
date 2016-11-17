@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.beyondar.android.fragment.BeyondarFragmentSupport;
 import com.beyondar.android.plugin.radar.RadarView;
@@ -93,6 +94,8 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
 
         // User position (you can change it using the GPS listeners form Android
         // API)
+        firebaseRef = LibraryClass.getFirebase();
+        firebaseRef = firebaseRef.child("pontos");
 
         if (location == null){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -102,52 +105,65 @@ public class PontoARActivity extends FragmentActivity implements SeekBar.OnSeekB
                 }
             });
             builder.show();
-        }else
+        }else {
             mWorld.setGeoPosition(location.getLatitude(), location.getLongitude());
+            firebaseRef.addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    String ref = dataSnapshot.getKey();
+                    DatabaseReference novaRef;
+                    novaRef = firebaseRef.child(ref);
 
-        firebaseRef = LibraryClass.getFirebase();
-        firebaseRef = firebaseRef.child("pontos");
+                    novaRef.addValueEventListener(new ValueEventListener() {
 
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            Ponto ponto = dataSnapshot.getValue(Ponto.class);
+                            if (ponto != null) {
+                                double nLatitude = ponto.getLatitude() - location.getLatitude();
+                                double nLongitude = ponto.getLongitude() - location.getLongitude();
+                                if (nLatitude > -0.01833 && nLatitude < 0.01833 && nLongitude > -0.01833 &&
+                                        nLongitude < 0.01833 && !ponto.getNome().equals("pedra") &&
+                                        !ponto.getNome().equals("catedral") && !ponto.getNome().equals("chico")) {
+                                    pontos.add(ponto);
+                                    GeoObject go = new GeoObject(l);
+                                    go.setGeoPosition(location.getLatitude() + (nLatitude * 0.01), location.getLongitude() + (nLongitude * 0.01));
+                                    //go.setImageResource(R.mipmap.logo_fundo_azul);
+                                    go.setName(ponto.getNome());
+                                    l++;
+                                    mWorld.addBeyondarObject(go);
+                                    replaceImagesByStaticViews(mWorld);
+                                }
+                            }
 
-        firebaseRef.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                String ref = dataSnapshot.getKey();
-                DatabaseReference novaRef;
-                novaRef = firebaseRef.child(ref);
+                        }
 
-                novaRef.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
 
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        }
+                    });
+                }
 
-                        Ponto ponto = dataSnapshot.getValue(Ponto.class);
-                        pontos.add(ponto);
-                        GeoObject go = new GeoObject(l);
-                        go.setGeoPosition(ponto.getLatitude(), ponto.getLongitude());
-                        //go.setImageResource(R.mipmap.logo_fundo_azul);
-                        go.setName(ponto.getNome());
-                        l++;
-                        mWorld.addBeyondarObject(go);
-                        replaceImagesByStaticViews(mWorld);
+                @Override
+                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                }
 
-                    }
+                @Override
+                public void onChildRemoved(DataSnapshot dataSnapshot) {
+                }
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                @Override
+                public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                }
 
-                    }
-                });
-            }
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                }
 
-            @Override public void onChildChanged(DataSnapshot dataSnapshot, String s) {}
-            @Override public void onChildRemoved(DataSnapshot dataSnapshot) {}
-            @Override public void onChildMoved(DataSnapshot dataSnapshot, String s) {}
-            @Override public void onCancelled(DatabaseError databaseError) {}
+            });
 
-        });
-
-
+        }
         // set listener for the geoObjects
         mBeyondarFragment.setOnClickBeyondarObjectListener(this);
 

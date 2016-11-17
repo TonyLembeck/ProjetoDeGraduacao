@@ -20,7 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addAltUser"
-        android:inputType="numberDecimal" />
+        android:inputType="text" />
+
+
+
 </LinearLayout>
 
     <LinearLayout
@@ -38,7 +41,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
+            android:inputType="text"
             android:id="@+id/addDistancia"/>
 
     </LinearLayout>
@@ -58,7 +61,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
+            android:inputType="text"
             android:id="@+id/addAltitude"/>
     </LinearLayout>
 
@@ -77,7 +80,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
+            android:inputType="text"
             android:id="@+id/addLatitude"/>
 
     </LinearLayout>
@@ -98,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/addLongitude"
-            android:inputType="numberDecimal" />
+            android:inputType="text" />
 
     </LinearLayout>
 

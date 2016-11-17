@@ -103,12 +103,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             latLng = new LatLng(location.getLatitude(), location.getLongitude());
             mMap.setMyLocationEnabled(true);
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13));
-
         }
 
         firebaseRef = firebaseRef.child("pontos");
-
-
         firebaseRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -120,9 +117,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Ponto ponto = dataSnapshot.getValue(Ponto.class);
-                        LatLng latLng = new LatLng(ponto.getLatitude(), ponto.getLongitude());
-                        mMap.addMarker(new MarkerOptions().position(latLng).title(ponto.getNome()).zIndex(listaPonto.size()+1));
-                        listaPonto.add(ponto);
+                        if (ponto != null)
+                            if (!ponto.getNome().equals("pedra") && !ponto.getNome().equals("catedral") &&
+                                    !ponto.getNome().equals("chico")){
+                            LatLng latLng = new LatLng(ponto.getLatitude(), ponto.getLongitude());
+                            mMap.addMarker(new MarkerOptions().position(latLng).title(ponto.getNome()).zIndex(listaPonto.size() + 1));
+                            listaPonto.add(ponto);
+                            }
                     }
 
                     @Override
@@ -155,7 +156,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         });
                         builder.show();
                     }else {
-                        latLngTemp = new LatLng(location.getLatitude(), location.getLongitude());
                         mMap.setMyLocationEnabled(true);
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
@@ -189,7 +189,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         mMap.setMyLocationEnabled(true);
                     }
                     for (int i = 0; i < listaPonto.size(); i++) {
-                        Ponto ponto = (Ponto) listaPonto.get(i);
+                        Ponto ponto = listaPonto.get(i);
                         LatLng latLng = new LatLng(ponto.getLatitude(), ponto.getLongitude());
                         mMap.addMarker(new MarkerOptions().position(latLng).title(ponto.getNome()).zIndex(i+1));
                     }
@@ -255,6 +255,23 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void onChicoClick(View view){
+        Intent intent = new Intent(this, TesteActivity.class);
+        intent.putExtra("local", "chico");
+        startActivity(intent);
+    }
+
+    public void onCatedralClick(View view){
+        Intent intent = new Intent(this, TesteActivity.class);
+        intent.putExtra("local", "catedral");
+        startActivity(intent);
+    }
+    public void onPedraClick(View view){
+        Intent intent = new Intent(this, TesteActivity.class);
+        intent.putExtra("local", "pedra");
+        startActivity(intent);
     }
 
 }

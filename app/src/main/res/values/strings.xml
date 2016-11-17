@@ -98,5 +98,7 @@
     <string name="ar">Realidade Aumentada</string>
     <string name="orientacoes_user_base">Após informar sua altura, aponte o alvo na base\n do objeto e dispare para calcular a distância!</string>
     <string name="orientacoes_user_topo">Aponte o alvo no topo do objeto \n e dispare para calcular a altura!</string>
+    <string name="horizonte">Favor apontar o marcador central para a base do objeto!</string>
+    <string name="nao_e_numero">Favor inserir apenas numeros para os valores desejados!</string>
 
 </resources>
