@@ -256,24 +256,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             e.printStackTrace();
         }
     }
-
-    public void onChicoClick(View view){
-        Intent intent = new Intent(this, TesteActivity.class);
-        intent.putExtra("local", "chico");
-        startActivity(intent);
-    }
-
-    public void onCatedralClick(View view){
-        Intent intent = new Intent(this, TesteActivity.class);
-        intent.putExtra("local", "catedral");
-        startActivity(intent);
-    }
-    public void onPedraClick(View view){
-        Intent intent = new Intent(this, TesteActivity.class);
-        intent.putExtra("local", "pedra");
-        startActivity(intent);
-    }
-
 }
 
 

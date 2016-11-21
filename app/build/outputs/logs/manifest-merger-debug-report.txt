@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-72:12
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:2:1-71:12
 	package
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml
@@ -109,7 +109,7 @@ ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/Andr
 	android:name
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:20:9-67
 application
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:23:5-70:19
+ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:23:5-69:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
@@ -6209,10 +6209,6 @@ activity#br.com.android.sample.view.visualizar.VisualizaFotoActivity
 ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:68:9-75
 	android:name
 		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:68:19-72
-activity#br.com.android.sample.view.mapa.TesteActivity
-ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:69:9-70
-	android:name
-		ADDED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml:69:19-58
 uses-sdk
 INJECTED from /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] /home/tony/AndroidStudioProjects/ProjetoDeGraduacao/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78

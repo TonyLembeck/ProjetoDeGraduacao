@@ -66,7 +66,6 @@
             android:name=".view.visualizar.VisualizaComentarioActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".view.visualizar.VisualizaFotoActivity" />
-        <activity android:name=".view.mapa.TesteActivity"></activity>
     </application>
 
 </manifest>
